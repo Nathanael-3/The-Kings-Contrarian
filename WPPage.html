@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/366dffd563.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="/Users/nathanaelkennedy-leroi/Downloads/The%20King's%20Contarian%20Code/Images/KC5.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>The King's Contrarian</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+}
+
+.fa-instagram {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-x-twitter {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-linkedin {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar i {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  float: none;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  transform: translate(-10%, -0%);
+  font-family: courier new;
+}
+
+.main {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.main img {
+    width: 55%; height: auto;
+}
+
+#article {
+    font-family: century schoolbook;
+}
+
+#author {
+    font-family: century schoolbook;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid black;
+  }
+
+
+@media (max-width: 650px) {
+    .navbar i {
+        width: 100%;
+    }
+}
+
+@media (max-width: 412px) {
+    .main {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .main img {
+        width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    br{
+       display: none;
+    }
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+        <h1 onclick="location.href='index.html'" style="font-family:century schoolbook; cursor: pointer; z-index: 1;">The King's Contrarian<small>Est. 2023</small></h1>
+        <h2 id="current_date"></h2>
+        <style>
+            h2 {
+                font-size: small;
+                font-family: century schoolbook;
+            }
+
+            small {
+                font-size: small;
+            }
+
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+        </style>
+        <script>
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const d = new Date();
+            let day = weekday[d.getDay()];
+            const n = new Date();
+            let day_month = n.getDate();
+            document.getElementById("current_date").innerHTML = day + "," + day_month;
+            const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const m = new Date();
+            let name = month[m.getMonth()];
+            const y = new Date();
+            let year = y.getFullYear();
+            document.getElementById("current_date").innerHTML = day + "," + " " + day_month + " " + name + "," + " " + year;
+        </script>
+        <hr>
+    </div>
+    <div class="container" class="btn btn-primary btn-sm">
+        <style>
+            .container {
+                text-align: center;
+                font-size: small;
+                font-family: century schoolbook;
+                position: relative;
+            }
+        </style>
+        <button onclick="location.href='RealAbout.html'" class="btn btn-outline-dark btn-sm" id="#About">About</button>
+        <button onclick="location.href='BR.html'" class="btn btn-outline-dark btn-sm" id="#BookReviews">Reviews & Recommendations</button>
+        <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
+        <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
+        <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
+    </div>
+    <hr>
+    <div class="navbar">
+        <i>Western Politics | Share:<a class="fa fa-x-twitter"></a><a style="padding-left: 5px;" class="fa fa-instagram"></a><a style="padding-left: 5px;" class="fa fa-linkedin"></a></i>
+      </div>
+      <div class="main">
+        <p>
+            <b style="font-family: century schoolbook;"><u>The Star-Spangled Banner Should Remain Waving, Full Mast, O’er The Land Of The Free And The Home Of The Brave</u></b>
+        </p>
+        <img src="https://media.istockphoto.com/id/522897875/photo/us-flags-at-half-staff-and-statue-of-liberty.jpg?s=612x612&w=0&k=20&c=OPJA1dCl2PJUC_RyZqGOdFWD6zcWEUpsRlkNELU05CI=" alt="Default Image">
+        <p style="font-family: century schoolbook; font-size: small;">
+        <b>US flags flying at half mast in front of the Statue of Liberty</b>
+        </p>
+        <p id="author">
+            <b>By: Grant Wernick | Duke University</b>
+        </p>
+        <p id="article">
+            Americans are flag obsessed to the point of shocking the self-effacing British conscience. Just ask CNN <br id="br">
+            contributor Laura Beers, who claims her English husband detects “sinister overtones of interwar <br id="br">
+            dictatorship” in the way American students traditionally start the day—by pledging allegiance to the flag,<br id="br">
+             and to the republic for which it stands. 
+        </p>
+        <p id="article">
+            The US national anthem layers on the devotion even thicker than the pledge of allegiance. My friend Anna <br id="br">
+            from Oxfordshire can’t sing God Save the King but knows how the Star-Spangled Banner sounds belted out by <br id="br">
+            9,000 rabid Duke fans before tip-off at Cameron Indoor Stadium. The redcoats couldn’t touch our broad <br id="br">
+            stripes and brights stars at Fort McHenry two centuries ago, and she hears about it every time she attends <br id="br">
+            a college basketball game. 
+        </p>
+        <p id="article">
+            Americans feel in our bones that we have nothing to learn from the British, much less the British monarchy <br id="br">
+            (notwithstanding Prince Harry’s universally well-received musings, like when he declared the First Amendment <br id="br">
+            “bonkers”). However, to show the Stars and Stripes the respect they deserve, we Americans must swallow our <br id="br">
+            pride and look to the example of Buckingham Palace.
+        </p>
+        <p id="article">
+            The royals follow the Union Jack protocols to a fault. One such protocol reserves the lowering of the flag to <br id="br">
+            half-mast for the death of a member of the royal family. Notoriously, they even initially refused to lower the <br id="br">
+            flag for Diana, who technically was not a princess at the time of her death. (Prince Phillip complained privately <br id="br"> 
+            of “great humiliation” when a compromise was reached.) In the Land of the Free, there is no need for a special <br id="br">
+            flag carveout for the monarchy. Nonetheless, we should be much more sparing in our use of this potent symbol <br id="br">
+            of national mourning. 
+        </p>
+        <p id="article">
+            I first noticed excessive half-masting in 2022 in North Carolina. Frequently the flag would be lowered without any <br id="br">
+            clear national tragedy. Combing through past North Carolina flag alerts, it appears many of the instances were <br id="br">
+            decisions by Governor Roy Cooper to commemorate the passing of a former member of the state legislature. <br id="br">
+             Admittedly, this decision is within the wide latitude granted to governors by the US flag code. But the passing <br id="br">
+             of a local politician, which has no national significance, is a poor reason to lower what is the ultimate <br id="br">
+             national symbol. 
+        </p>
+        <p id="article">
+            To his credit, Governor Cooper seems as conservative as Prince Phillip when compared to his counterpart in <br id="br">
+            New Jersey, Phil Murphy. At the beginning of August, I was attending a family reunion in a scenic seaside town <br id="br">
+            of the Garden State, when my bliss was interrupted by the sight of the American flag at half-mast over town hall. <br id="br">
+            I had not seen the latest news and could not discount the possibility of a mass shooting or some other heinous <br id="br">
+            event (though, in what should have been a hint, no private residences had elected to follow the government <br id="br">
+            building’s suit).
+        </p>
+        <p id="article">
+            No large-scale tragedy of the sort had occurred. Rather, the lieutenant governor of New Jersey, Sheila Y. Oliver, <br id="br">
+            had suddenly passed away. In Executive Order Number 338, Governor Murphy mandated that US and New Jersey <br id="br">
+            state flags be flown at half-mast for one month to commemorate Oliver.
+        </p>
+        <p id="article">
+            Governor Murphy’s desire to honor her life and service was completely understandable. It may even have been appropriate <br id="br">
+            to lower the US flag for a short period (though no more than 10 days, the amount of time allocated by the US flag <br id="br">
+            code for the death of the vice president). But to put 30 days in perspective, that was how long John F. Kennedy <br id="br">
+            was honored after being assassinated by the CIA (ahem, Lee Harvey Oswald). It was 20 days longer than the flags<br id="br">
+             were lowered after 9/11, the most lethal attack on civilians in our nation’s history. And it was nearly one month <br id="br">
+             longer than the four day order by Governor Murphy after the terrorist attack at Abbey Gate that claimed the lives <br id="br">
+             of 13 US servicemembers, during the disastrous evacuation of Afghanistan. 
+        </p>
+        <p id="article">
+            I understand that Governor Murphy deeply respected Ms. Oliver and considered her “a trailblazer and an icon,” but <br id="br">
+            honoring the memory of a deceased politician for three and half weeks longer than 13 young Americans, who gave <br id="br">
+            the last full measure of devotion, is obviously disgraceful. 
+        </p>
+        <p id="article">
+            There are better ways of honoring the passing of local figures than lowering the American flag. Leave it at its <br id="br">
+            rightful place, gallantly streaming o’er the ramparts, except after the most devastating tragedies. Doing so will <br id="br">
+            not make us more British, God forbid, but it will preserve our most potent symbol of national mourning for the <br id="br">
+            dates that deserve to live in infamy.
+        </p>
+    </div>
+    <div class="footer">
+        <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
+            <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
+            <button id="subscribe" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link'">Subscribe</button>
+            <button id="donate" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L'">Donate</button>
+            <button id="constitution" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='Con.html'">Constitution</button><br>
+        <a href="https://twitter.com/KingsContrarian" class="fa-brands fa-x-twitter" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+        <a href="https://www.instagram.com/thekingscontrarian/" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+      </div>
+    
+    
+    </body>
+    </html>

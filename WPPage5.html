@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/366dffd563.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="/Users/nathanaelkennedy-leroi/Downloads/The%20King's%20Contarian%20Code/Images/KC5.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>The King's Contrarian</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+}
+
+.fa-instagram {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-x-twitter {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-linkedin {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar i {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  float: none;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  transform: translate(-10%, -0%);
+  font-family: courier new;
+}
+
+.main {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.main img {
+    width: 55%; height: auto;
+}
+
+#article {
+    font-family: century schoolbook;
+}
+
+#author {
+    font-family: century schoolbook;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid black;
+  }
+
+
+@media (max-width: 650px) {
+    .navbar i {
+        width: 100%;
+    }
+}
+
+@media (max-width: 412px) {
+    .main {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .main img {
+        width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    br{
+       display: none;
+    }
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+        <h1 onclick="location.href='index.html'" style="font-family:century schoolbook; cursor: pointer; z-index: 1;">The King's Contrarian<small>Est. 2023</small></h1>
+        <h2 id="current_date"></h2>
+        <style>
+            h2 {
+                font-size: small;
+                font-family: century schoolbook;
+            }
+
+            small {
+                font-size: small;
+            }
+
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+        </style>
+        <script>
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const d = new Date();
+            let day = weekday[d.getDay()];
+            const n = new Date();
+            let day_month = n.getDate();
+            document.getElementById("current_date").innerHTML = day + "," + day_month;
+            const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const m = new Date();
+            let name = month[m.getMonth()];
+            const y = new Date();
+            let year = y.getFullYear();
+            document.getElementById("current_date").innerHTML = day + "," + " " + day_month + " " + name + "," + " " + year;
+        </script>
+        <hr>
+    </div>
+    <div class="container" class="btn btn-primary btn-sm">
+        <style>
+            .container {
+                text-align: center;
+                font-size: small;
+                font-family: century schoolbook;
+                position: relative;
+            }
+        </style>
+        <button onclick="location.href='RealAbout.html'" class="btn btn-outline-dark btn-sm" id="#About">About</button>
+        <button onclick="location.href='BR.html'" class="btn btn-outline-dark btn-sm" id="#BookReviews">Reviews & Recommendations</button>
+        <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
+        <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
+        <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
+    </div>
+    <hr>
+    <div class="navbar">
+        <i>Western Politics | Share:<a class="fa fa-x-twitter"></a><a style="padding-left: 5px;" class="fa fa-instagram"></a><a style="padding-left: 5px;" class="fa fa-linkedin"></a></i>
+      </div>
+      <div class="main">
+        <p>
+            <b style="font-family: century schoolbook;"><u>Do You Feel Represented? A Case for British Localism</u></b>
+        </p>
+        <img src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2021/07/CLI313.village_novels.GettyImages157006201.jpg" alt="Default Image">
+        <p style="font-family: century schoolbook; font-size: small;">
+        <b>View of an idyllic British village</b>
+        </p>
+        <p id="author">
+            <b>By: The Editorial Board</b>
+        </p>
+        <p id="article">
+            The UK is made up of 650 constituencies across its four countries, each with different political persuasions, <br id="br">
+            needs, and desires. Yet, the power that constituencies have to shape their local communities through taxation <br id="br">
+            to education to now even speed limits is non-existent. 
+        </p>
+        <p id="article">
+            When compared to other Western nations the UK is remarkably centralised, despite devolution. States in the US, <br id="br">
+            Canada, Germany, Switzerland, the Nordics etc. all have a level of autonomy that UK counties don’t even come <br id="br">
+            close to. For example, in Sweden healthcare is coordinated on the local level, whilst in Germany the same can <br id="br">
+            be said of education, and in Switzerland even its executive branch is shared between the different executives <br id="br">
+            of each canton.
+        </p>
+        <p id="article">
+            When local politics becomes more influential than national politics, the reigning national political party, <br id="br">
+            whilst still important, becomes a less polarising issue and surrenders the responsibility to impossibly satisfy <br id="br">
+            the needs of all 650 constituencies.
+        </p>
+        <p id="article">
+            Instead of Westminster proclaiming the need to level up the UK, particularly parts of the North, why not give  <br id="br">
+            Northern constituencies more power to establish policies that they believe best suit them? Much like in the US,  <br id="br">
+            where Florida and California are pitched as the two ways to do governance or in Bavaria where business friendly  <br id="br">
+            policies allow it to outperform other German states, for the North to actually improve it has to have the ability  <br id="br">
+            to differentiate itself from London and the South and with the current centralisation of politics, it is unable  <br id="br">
+            to do so.
+        </p>
+        <p id="article">
+            However, when discussing this idea amongst friends and relatives, people are quick to bemoan the incompetency <br id="br">
+            of their local MP or local council, insisting that they themselves could probably do a better job. Despite this, <br id="br">
+            many local MP’s, particularly where I live, have been in power for a very long time as their area continues to <br id="br">
+            vote along party lines. 
+        </p>
+        <p id="article">
+            This has resulted in local politics becoming completely irrelevant to its locality, merely representing which <br id="br">
+            party the area would like in the House of Commons. Whilst this is important, there is very little accountability <br id="br">
+            on the local level, as for example a Labour MP in Lewisham Deptford knows they will never get voted out of office <br id="br">
+            and thus has no incentive to rock the boat on policy, out of potential fear of things going wrong. 
+        </p>
+        <p id="article">
+            If local MP’s were held more accountable through added power to implement significant policy change on the local <br id="br">
+            level and operated outside of a two party system, added political competition would bring much-needed alternatives <br id="br">
+            to the current political status quo. A status quo that is resulting in fewer people turning out to vote and an <br id="br">
+            increase in the popularity of the phrase ‘politically homeless’ particularly amongst Gen Z.
+        </p>
+        <p id="article">
+            Finally, the more we abstract politics up the chain to central planners, the more things are likely to go wrong or <br id="br">
+            nothing to get done whatsoever. Instead, we must reclaim control over our localities to best aid the local communities <br id="br">
+            that we all reside in. Democracy is not about power but about representation, which is best expressed on the local level.
+        </p>
+        <p id="article">
+            When politics becomes about power, the executive branch evidently turns into a political war to ideologically <br id="br">
+            control the lives of the other half that didn’t vote for your candidate. This system polarises the electorate and <br id="br">
+            leads everyone to feel dissatisfied, feeling as though their areas are neglected from the political spotlight or <br id="br">
+            that the solutions being proposed are solutions that they vehemently disagree with.
+        </p>
+        <p id="article">
+            Our current politics is calling for more unity, which can only be accomplished by providing local communities <br id="br">
+            with the mandate to have autonomy over their own governance. 
+        </p>
+    </div>
+    <div class="footer">
+        <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
+            <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
+            <button id="subscribe" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link'">Subscribe</button>
+            <button id="donate" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L'">Donate</button>
+            <button id="constitution" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='Con.html'">Constitution</button><br>
+        <a href="https://twitter.com/KingsContrarian" class="fa-brands fa-x-twitter" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+        <a href="https://www.instagram.com/thekingscontrarian/" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+      </div>
+    
+    
+    </body>
+    </html>

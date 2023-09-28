@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/366dffd563.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="/Users/nathanaelkennedy-leroi/Downloads/The%20King's%20Contarian%20Code/Images/KC5.png"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>The King's Contrarian</title>
+
+    </head>
+    <body>
+        <div class="header" style="text-align: center;">
+            <h1 onclick="location.href='index.html'" style="cursor: pointer; z-index: 1;">The King's Contrarian<small>Est. 2023</small></h1>
+            <h2 id="current_date"></h2>
+            <style>
+                h2 {
+                    font-size: small;
+                    font-family: century schoolbook;
+                }
+
+                small {
+                    font-size: small;
+                }
+
+                body {
+                    max-width: 100%;
+                    overflow-x: hidden;
+                    text-align: center;
+                    font-size: small;
+                    font-family: century schoolbook;
+
+                }
+
+                .footer {
+                    padding: 20px;
+                    text-align: center;
+                    border-top: 1px solid black;
+                }
+
+            </style>
+            <script>
+                const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                const d = new Date();
+                let day = weekday[d.getDay()];
+                const n = new Date();
+                let day_month = n.getDate();
+                document.getElementById("current_date").innerHTML = day + "," + day_month;
+                const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+                const m = new Date();
+                let name = month[m.getMonth()];
+                const y = new Date();
+                let year = y.getFullYear();
+                document.getElementById("current_date").innerHTML = day + "," + " " + day_month + " " + name + "," + " " + year;
+            </script>
+            <hr id="hr1">
+        </div>
+        <div class="container" class="btn btn-primary btn-sm">
+            <button onclick="location.href='RealAbout.html'" class="btn btn-outline-dark btn-sm" id="#About">About</button>
+            <button onclick="location.href='BR.html'" class="btn btn-outline-dark btn-sm" id="#BookReviews">Reviews & Recommendations</button>
+            <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
+            <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
+            <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
+        </div>
+            <hr id="hr2">
+            <div class="main">
+                <h1><u>The King's Contrarian Constitution</u></h1>
+                <p>
+                    <u>Definitions</u>
+
+                    <p>
+                        •	The King’s Contrarian is a non-partisan, independent student run newspaper providing a platform for contrarian viewpoints on current affairs.
+                    <br>•	The King’s Contrarian is not linked to any political party, partisan group or political society at King’s College London and thus runs as an independent newspaper.
+                    </p>
+
+                    <u>Obligations</u>
+
+                    <p>
+
+                        •	The King’s Contrarian is committed to civil discourse and presenting a unique take on specific political, economic and law based debates.
+                    <br>•	The editor-in-chief makes the final decision on what gets published; they also oversee the publishing of any social media posts.
+                    <br>•	Violations of the constitution by the editor-in-chief will lead to their impeachment; this includes improper use of finances (disclosed in finances), continued posting of improper content (disclosed in content) or continued poor performance/ laziness.
+                    <br>•	The King’s contrarian is a non-profit organisation and thus all donations must be used on improving the quality or quantity of the service, the spending of donation money will also be disclosed on our website so that transparency is kept.
+                    </p>
+
+                    <u>Content</u>
+
+                    <p>
+                        •	It is the role of the editor-in-chief to ensure that the King’s Contrarian refrains from publishing:
+                        <br>-Personal attacks at specific individuals who are not in the public sphere.
+                        <br>-Material promoting threats of violence and the like.
+                        <br>-The King’s Contrarian must allow for some diversified political representation of current affairs, although the editor-in-chief largely decides the scope of this.
+                        <br>-There can be no pornographic or extremely macabre images to head the article.
+                    <br>•	If any malicious harm is done to the King’s Contrarian, legal action can be taken.
+                    <br>•	The constitution must remain visible on the website and any changes to the constitution must be approved by democratic vote.
+                    </p>
+
+                    <u>Powers of the editor-in-chief</u>
+
+                    <p>
+
+                        •	The editor-in-chief has the sole discretionary powers over all editing, social media posts, and publications to the website.
+                    <br>•	The editor-in-chief has the sole power to appoint an editorial team, who specialise in each subtopic offered by The King’s Contrarian.
+                    <br>•	The editor-in-chief has full control over all websites, social media and emails of The King’s Contrarian.
+                    <br>•	The editor-in-chief is solely responsible for the expenses of The King’s Contrarian and in being transparent with where donation money is spent.
+                    <br>•	If an editor-in-chief reaches the end of their tenure then they will be honoured for life on the website and become an honorary editor-in-chief, if an editor-in-chief does exceptional work then they will be honoured with editor-in-chief emeritus for life.
+                    </p>
+
+                    <u>Appointment and Removal of an editor-in-chief</u>
+
+                    <p>
+
+                        •	The new editor-in-chief is to be appointed each year by the 1st July.
+                    <br>•	An editor-in-chief if sufficiently qualified, can remain editor-in-chief for a maximum of two years, after this point successful editors-in-chief can receive the honorific title of editor-in-chief emeritus but this is purely a ceremonial role.
+                    <br>•	The current editor-in-chief is the one who will decide who the incumbent editor-in-chief will be, this will be decided through an application process, which will include a CV, Cover Letter and interview.
+                    <br>•	If any member of The King’s Contrarian feels that the editor-in-chief is acting in an unprofessional way, is lacking commitment to the King’s Contrarian or is using donation money in a profit based way they can call for their removal.
+                    <br>•	A meeting and investigation will subsequently be carried out where members discuss editor-in-chief violations and vote on whether to impeach the editor-in-chief or for him/her to remain in place.
+                    <br>•	The members of the King’s Contrarian will then replace the editor-in-chief through a vote. If the editor-in-chief is impeached they will lose the right to become an honorary editor-in-chief for life.
+                    <br>•	If the editor-in-chief is not impeached, a call for removal cannot be done for another 6 months.
+
+                    </p>
+                    <u>Finances</u>
+
+                    <p>
+                        •	Given that The King’s Contrarian is a non-profit, all donations must go towards bettering the service provided by The King’s Contrarian.
+                    <br>•	All donations and the allocation of this money must be fully transparent on the website.
+                    </p>
+                </p>
+            </div>
+            <div class="footer">
+                <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
+                    <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
+                    <button id="subscribe" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link'">Subscribe</button>
+                    <button id="donate" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L'">Donate</button>
+                    <button id="constitution" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='Con.html'">Constitution</button><br>
+                <a href="https://twitter.com/KingsContrarian" class="fa-brands fa-x-twitter" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+                <a href="https://www.instagram.com/thekingscontrarian/" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+              </div>
+    </body>
+</html>

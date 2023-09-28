@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/366dffd563.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="/Users/nathanaelkennedy-leroi/Downloads/The%20King's%20Contarian%20Code/Images/KC5.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>The King's Contrarian</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+}
+
+.fa-instagram {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-x-twitter {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-linkedin {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar i {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  float: none;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  transform: translate(-10%, -0%);
+  font-family: courier new;
+}
+
+.main {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.main img {
+    width: 55%; height: auto;
+}
+
+#article {
+    font-family: century schoolbook;
+}
+
+#author {
+    font-family: century schoolbook;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid black;
+  }
+
+
+@media (max-width: 650px) {
+    .navbar i {
+        width: 100%;
+    }
+}
+
+@media (max-width: 412px) {
+    .main {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .main img {
+        width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    br{
+       display: none;
+    }
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+        <h1 onclick="location.href='index.html'" style="font-family:century schoolbook; cursor: pointer; z-index: 1;">The King's Contrarian<small>Est. 2023</small></h1>
+        <h2 id="current_date"></h2>
+        <style>
+            h2 {
+                font-size: small;
+                font-family: century schoolbook;
+            }
+
+            small {
+                font-size: small;
+            }
+
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+        </style>
+        <script>
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const d = new Date();
+            let day = weekday[d.getDay()];
+            const n = new Date();
+            let day_month = n.getDate();
+            document.getElementById("current_date").innerHTML = day + "," + day_month;
+            const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const m = new Date();
+            let name = month[m.getMonth()];
+            const y = new Date();
+            let year = y.getFullYear();
+            document.getElementById("current_date").innerHTML = day + "," + " " + day_month + " " + name + "," + " " + year;
+        </script>
+        <hr>
+    </div>
+    <div class="container" class="btn btn-primary btn-sm">
+        <style>
+            .container {
+                text-align: center;
+                font-size: small;
+                font-family: century schoolbook;
+                position: relative;
+            }
+        </style>
+        <button onclick="location.href='RealAbout.html'" class="btn btn-outline-dark btn-sm" id="#About">About</button>
+        <button onclick="location.href='BR.html'" class="btn btn-outline-dark btn-sm" id="#BookReviews">Reviews & Recommendations</button>
+        <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
+        <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
+        <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
+    </div>
+    <hr>
+    <div class="navbar">
+        <i>Western Politics | Share:<a class="fa fa-x-twitter"></a><a style="padding-left: 5px;" class="fa fa-instagram"></a><a style="padding-left: 5px;" class="fa fa-linkedin"></a></i>
+      </div>
+      <div class="main">
+        <p>
+            <b style="font-family: century schoolbook;"><u>Affirmative Action, DEI And What It All Means For The UK</u></b>
+        </p>
+        <img src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/TLRIWNSMQ5LUVHVWQ43JGQU6Q4.jpg" alt="Default Image">
+        <p style="font-family: century schoolbook; font-size: small;">
+        <b>An anti affirmative action protestor in front of the US Supreme Court building</b>
+        </p>
+        <p id="author">
+            <b>By: Saket Mistri | University of Oxford</b>
+        </p>
+        <p id="article">
+            In the US, since Regents of the University of California v. Bakke in 1978 the use of race-based affirmative <br id="br">
+            action was permitted, under the presumption that universities with students from diverse racial backgrounds, <br id="br">
+            encourages diversity of thought and thus improves educational experience. This was the first time that the <br id="br">
+            word ‘diversity’ came to replace the word discrimination. 
+        </p>
+        <p id="article">
+            Since then, the word diversity has spread to the corporate sector, NGO’s, governments, and the UN. The word <br id="br">
+            has gained so much traction that it is increasingly difficult to find a university or business that doesn’t <br id="br">
+            tout their diversity, equity and inclusion (DEI) initiatives and statistics. The argument being that a <br id="br">
+            diversity of races, genders, sexualities etc. create an environment that is inclusive to diversity of thought <br id="br">
+            and this diversity of thought benefits educational outcomes, profit, political outcomes etc.
+        </p>
+        <p id="article">
+            Yet, is any of this true or are these companies and institutions simply advancing ideological objectives? 
+        </p>
+        <p id="article">
+            Not that much research has actually been done on this subject and what research there is, is often associated <br id="br">
+            with partisan groups who are already heavily in favour of DEI and affirmative action for reasons other than <br id="br">
+            diversity of thought and seek to legitimise the practice further, by mentioning a perceived additional benefit. <br id="br">
+            Instead, from my own experience and the experience of my peers, as well as the situation that is occurring <br id="br">
+            on university campuses and businesses across the Anglosphere, it seems that DEI and affirmative action initiatives <br id="br">
+            are having the opposite effect to creating a diversity of thought. 
+        </p>
+        <p id="article">
+            <a href="https://www.cato.org/blog/note-unjust-firing-dr-tabia-lee">Professors have been fired for voicing their opinion</a>, <a href="https://www.cspicenter.com/p/academic-freedom-in-crisis-punishment">employees have been silenced</a>, and <a href="https://www.wsj.com/articles/ruy-teixeira-gets-political-asylum-american-enterprise-institute-center-for-american-progress-robert-doar-11657919700">researchers stifled.</a> <br id="br">
+            If a movement is attempting to silence any criticism, it is highly unlikely that it promotes a diversity of thought. <br id="br">
+            In fact, a group of <a href="https://journalofcontroversialideas.org/article/3/1/236">natural scientists (including two Nobel laureates)</a> and various <a href="https://www.aei.org/research-products/report/prohibit-diversity-equity-and-inclusion-statements/">research studies by major think <br id="br">
+            tanks</a> have both found that there is an inverse link between DEI and diversity of thought, typically because those <br id="br">
+            who support DEI and benefit from it share a very similar worldview. 
+        </p>
+        <p id="article">
+            This worldview believes group disparity equates to group discrimination and thus group discrimination is necessary <br id="br">
+            to correct group disparity. Given that criticism of the movement comes with a steep cost and those who advance <br id="br">
+            DEI tend to share a similar progressive worldview, it instead creates a culture of groupthink that is openly <br id="br">
+            antagonistic to diversity of thought. In practice, it acts in a very similar way to Herbert Marcuse’s idea of <br id="br">
+            liberating tolerance. 
+        </p>
+        <p id="article">
+            In fact, it is this belief in group disparity and the need for group discrimination that is the actual driving <br id="br">
+            force behind affirmative action and DEI initiatives, whilst diversity of thought is merely used a nice sounding <br id="br">
+            placeholder.  The argument for diversity of thought breaks down rather quickly upon the realisation that skin <br id="br">
+            pigment has no relation to cognitive capabilities, and thus whilst white people have a wide array of diverging <br id="br">
+            opinions on many different issues and are not one monolith, the same can be said for black people and other races. <br id="br">
+            Instead, the current cultural milieu punishes companies or individuals who do not partake in this group <br id="br">
+            discrimination and those who are most fervently pushing for these measures often overcome the lacklustre pushback <br id="br">
+            of those who are apolitical or socially liberal.
+        </p>
+        <p id="article">
+            As Justice Thomas states in his concurring opinion on Students for Fair Admissions v. Harvard “Harvard and UNC <br id="br">
+            ask us to blind ourselves to the burdens imposed on the millions of innocent applicants denied admission because <br id="br">
+            of their membership in a currently disfavoured race.” Thus diversity becomes divvying up individuals by immutable <br id="br">
+            characteristics, equity becomes discrimination against innocent individuals by dint of their membership to an <br id="br">
+            unfavourable identity group, and inclusion becomes silence all that oppose this programme. It’s a clever use of <br id="br">
+            positive language to hide insidious motives, reminiscent of something you might find in Nineteen Eighty-Four. 
+        </p>
+        <p id="article">
+            That being said I don’t believe the majority of those who support these initiatives are acting insidiously, <br id="br">
+            instead it is more likely coming from a place of compassion or ignorance. The use of words that we deem positive <br id="br">
+            like ‘inclusion’ and ‘diversity’ mean those who are less politically interested or aware think of these <br id="br">
+            initiatives in a positive light, especially when partnered with phrases like ‘we just want everyone to feel <br id="br">
+            included.’ However, the end of affirmative action in the US will mean that companies and institutions will have <br id="br">
+            to reconsider their use of DEI initiatives, potentially allowing for a deeper discussion on its stated purposes. <br id="br">
+            Yet, in the UK these initiatives are anything but on there way out. This Conservative government has done little <br id="br">
+            to counter this worrying trend, even after state institutions like the RAF placed a pause on hiring white males <br id="br">
+            and almost every company makes a conscious effort to achieve racial and gender parity through discrimination <br id="br">
+            (both illegal practices). 
+        </p>
+        <p id="article">
+            Yet outside of merely their illegality, these initiatives will make UK firms perform worse than their American <br id="br">
+            counterparts, due to the fact that hiring based on meritocratic principles allows firms to employ from a wider <br id="br">
+            talent pool, hire more productive and more talented workers, avoid the needless politicisation of their companies,<br id="br">
+            and lower their costs by disbanding their DEI programs and firing the people working on them. At a time when the <br id="br">
+            UK economy is performing badly, ensuring businesses are running as efficiently as possible is in the interest of <br id="br">
+            the UK government.
+        </p>
+        <p id="article">
+            <a href="https://blogs.lse.ac.uk/businessreview/2023/07/10/the-end-of-affirmative-action-will-hurt-business/">Whilst universities like LSE</a> have already been quick to lament the end of affirmative action and its consequences  <br id="br">
+            for business, any litigation brought against a company in the US is unfortunately unlikely to significantly effect  <br id="br">
+            DEI initiatives in the UK and thus UK business practices are unlikely to impacted at all. 
+        </p>
+        <p id="article">
+            Those arguing for a continuation of these programs, I would take heed of the warning of Justice Thomas when he  <br id="br">
+            argues “I would have thought that history had by now taught a “greater humility” when attempting to “distinguish  <br id="br">
+            good from harmful uses of racial criteria.” From the Black Codes, to discriminatory and destructive social welfare  <br id="br">
+            programs, to discrimination by individual government actors, bigotry has reared its ugly head time and again. Anyone  <br id="br">
+            who today thinks that some form of racial discrimination will prove “helpful” should thus tread cautiously, lest  <br id="br">
+            racial discriminators succeed (as they once did) in using such language to disguise more invidious motives. Arguments  <br id="br">
+            for the benefits of race-based solutions have proved pernicious in segregationist circles. Segregated universities  <br id="br">
+            once argued that race-based discrimination was needed “to preserve harmony and peace and at the same time furnish  <br id="br">
+            equal education to both groups.”
+        </p>
+        <p id="article">
+            It is high time for the UK to reflect on this landmark decision across the pond and act to prevent the widespread <br id="br">
+            practice of discrimination by immutable characteristics. It is of the upmost importance that the UK remain committed <br id="br">
+            to meritocracy, equality and freedom to all, as the great classical liberal thinkers who occupied this island <br id="br">
+            championed for, let their legacy not go to waste. 
+        </p>
+    </div>
+    <div class="footer">
+        <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
+            <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
+            <button id="subscribe" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link'">Subscribe</button>
+            <button id="donate" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L'">Donate</button>
+            <button id="constitution" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='Con.html'">Constitution</button><br>
+        <a href="https://twitter.com/KingsContrarian" class="fa-brands fa-x-twitter" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+        <a href="https://www.instagram.com/thekingscontrarian/" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+      </div>
+    
+    </body>
+    </html>

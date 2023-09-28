@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/366dffd563.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="/Users/nathanaelkennedy-leroi/Downloads/The%20King's%20Contarian%20Code/Images/KC5.png"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>The King's Contrarian</title>
+
+    </head>
+    <body>
+        <div class="header" style="text-align: center;">
+            <h1 onclick="location.href='index.html'" style="cursor: pointer; z-index: 1;">The King's Contrarian | Reviews & Recommendations</h1>
+            <h2 id="current_date"></h2>
+            <style>
+                * {
+                        box-sizing: border-box;
+                        }
+
+                                #hr1 {
+                                    margin-right: 15%;
+                                    margin-left: 15%;
+                                    
+                                }
+
+                                #hr2 {
+                                    margin-right: 15%;
+                                    margin-left: 15%;
+                                    
+                                }
+
+
+                        .flex-container {
+                        display: flex;
+                        flex-direction: row;
+                        }
+
+                        .flex-item-left {
+                            padding: 10px;
+                            flex: 35%;
+                            padding-right: 35px;
+                            padding-top: 60px;
+                        }
+
+                        .flex-item-left img {
+                            width: 100%; height:auto;
+                        }
+
+
+                        .flex-item-left-left {
+                            padding: 10px;
+                            flex: 35%;
+                            text-align: right;
+                            padding-top: 60px;
+                        }
+
+                        .flex-item-left-left h1 {
+                            font-size: 1.1vw;
+                        }
+
+                        .flex-item-left-left ul {
+                            font-size: 0.9vw;
+                        }
+
+
+                        .flex-item-left-left p {
+                            font-size: 0.9vw;
+                        }
+
+                        .flex-item-right {
+                        padding: 10px;
+                        flex: 30%;
+                        border-left: 0.1px solid lightgrey;
+                        }
+
+                        #third:after {
+                            content: ""; /* This is necessary for the pseudo element to work. */ 
+                            display: block; /* This will put the pseudo element on its own line. */
+                            margin: 0 auto; /* This will center the border. */
+                            width: 65%; /* Change this to whatever width you want. */
+                            padding-top: 20px; /* This creates some space between the element and the border. */
+                            border-bottom: 0.1px solid lightgrey; /* This creates the border. Replace black with whatever color you want. */
+                        }
+
+                        #last {
+                            border-bottom: none;
+                        }
+
+
+                        h2 {
+                    font-size: small;
+                    font-family: century schoolbook;
+                }
+
+                small {
+                    font-size: small;
+                }
+
+                body {
+                    max-width: 100%;
+                    overflow-x: hidden;
+                    text-align: center;
+                    font-size: small;
+                    font-family: century schoolbook;
+
+                }
+
+                .navbar {
+                    display: flex;
+                }
+
+                .navbar a {
+                    color: black;
+                    padding: 14px 20px;
+                    text-decoration: none;
+                    text-align: center;
+                    float: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: courier new;
+                    width: 100%;
+                }
+
+                .prevent-select {
+                    -webkit-user-select: none; /* Safari */
+                    -ms-user-select: none; /* IE 10 and IE 11 */
+                    user-select: none; /* Standard syntax */
+                    }
+
+                .footer {
+                    padding: 20px;
+                    text-align: center;
+                    border-top: 0.5px solid black;
+                }
+
+                /* Responsive layout - makes a one column-layout instead of two-column layout */
+                    @media (max-width: 461px) {
+                        .navbar {
+                            display: none;
+                        }
+                    }
+                
+                    @media (max-width: 461px) {
+                        #hr1 {
+                            display: none;
+                        }
+                    }
+
+                    @media (max-width: 461px) {
+                        #hr2 {
+                            margin-right: 0%;
+                            margin-left: 0%;
+                        }
+                    }
+                
+                @media (max-width: 850px) {
+                        .flex-container {
+                            flex-direction: column-reverse;
+                            }
+                        }
+
+                        @media (max-width: 850px) {
+                        .flex-item-left img {
+                            width: 80%; height: auto;
+                            }
+                        }
+
+                        @media (max-width: 850px) {
+                        .flex-item-left {
+                                padding-top: 10px;
+                                padding-right: 10px;
+                            }
+                        }
+            
+                    @media (max-width: 850px) {
+                    .flex-item-right {
+                            display: none;
+                            }
+                        }
+
+                    @media (max-width: 850px) {
+                        .flex-item-left-left {
+                            text-align: center;
+                            border-bottom: 0.1px solid lightgrey;
+                            padding-top: 0px;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        #hr3, #hr4, #hr5, #hr6 {
+                            display: none;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        #br {
+                            display: none;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        .flex-item-left-left h1 {
+                            font-size: 16px;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        .flex-item-left-left ul {
+                            font-size: 14px;
+                            width: 90%;
+                            text-align: center;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        .flex-item-left-left p {
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        #text {
+                            display: none;
+                        }
+                    }
+
+            </style>
+            <script>
+                const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                const d = new Date();
+                let day = weekday[d.getDay()];
+                const n = new Date();
+                let day_month = n.getDate();
+                document.getElementById("current_date").innerHTML = day + "," + day_month;
+                const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+                const m = new Date();
+                let name = month[m.getMonth()];
+                const y = new Date();
+                let year = y.getFullYear();
+                document.getElementById("current_date").innerHTML = day + "," + " " + day_month + " " + name + "," + " " + year;
+            </script>
+            <hr>
+        </div>
+        <div class="container" class="btn btn-primary btn-sm">
+            <button onclick="location.href='RealAbout.html'" class="btn btn-outline-dark btn-sm" id="#About">About</button>
+            <button onclick="location.href='BR.html'" class="btn btn-outline-dark btn-sm" id="#BookReviews">Reviews & Recommendations</button>
+            <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
+            <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
+            <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
+        </div>
+            <hr id="hr1">
+            <div class="navbar">
+                <a href="#"><i class="fa-solid fa-arrow-trend-up" style="padding: 20px; color: green;"></i><b onclick="location.href='Stats.html'">Statistics & Data</b><i class="fa-solid fa-arrow-trend-down" style="padding: 20px; color: red;"></i></a>
+              </div>
+            <hr id="hr2">
+        <div class="flex-container">
+            <div class="flex-item-left-left" id="first">
+                <h1 onclick="location.href='BRPage.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>The Ultimate Pursuit of Knowledge: <br id="br"> Mathematics, Philosophy, and History</b></h1>
+                <p>
+                    <ul onclick="location.href='BRPage.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>College is about the application of knowledge <br id="br">
+                            in the pursuit of truth. Yet, this mission <br id="br">
+                            has largely gone astray from campuses across <br id="br">
+                            America, as college becomes increasingly about <br id="br">
+                            credentials, politics, and incessant specialisation. <br id="br">
+                            Our Founding Founders were not interested in ...
+                        </li>
+                        
+                        <li style="padding-top: 0.5em" id="text">This article aims to put forward a proposition<br id="br">
+                            for a new academic degree discipline,<br id="br">
+                            mathematics, philosophy, and history whose<br id="br">
+                            aim is to teach students how to think as<br id="br">
+                            they pursue truth and attain knowledge. <br id="br">
+
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Marcus Johansson  |  The University of Texas at Austin</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;" id="second">
+                <img style="cursor: pointer; z-index: 99;" src="https://omnia.sas.upenn.edu/sites/default/files/iStock-91839945.jpg" alt="default image" onclick="location.href='BRPage.html'"/>
+            </div>
+            <div class="flex-item-right" style="text-align: center;" id="last">
+                <h1 class="prevent-select" onclick="location.href='BEPage2.html'" style="font-family: american typewriter; font-size: 1.1vw; color: white;"><b>It's Time We Privatised
+                    <br>The NHS</b></h1>
+                    <p class="prevent-select" onclick="location.href='BEPage2.html'" style="padding-top: 0.5em; font-size: 0.9vw; color: white;">
+                        With median waiting times at thirteen weeks and <br>
+                        increasingly common horror stories of those with <br>
+                        serious illnesses having to wait months or even years <br>
+                        for treatment, it is evident that the NHS is in need <br>
+                        of reform. This stark reality was on full display ...
+                    </p>
+                    <p class="prevent-select" style="font-size: 0.9vw; color: white;">
+                        <b>Stephen Pina  |  07/09/23</b>
+                    </p>
+            </div> 
+        </div>
+        </div>
+        <div class="footer">
+            <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
+                <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
+                <button id="subscribe" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link'">Subscribe</button>
+                <button id="donate" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L'">Donate</button>
+                <button id="constitution" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='Con.html'">Constitution</button><br>
+            <a href="https://twitter.com/KingsContrarian" class="fa-brands fa-x-twitter" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+            <a href="https://www.instagram.com/thekingscontrarian/" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a><br>
+            <button type="button" id="nextpage" class="btn shadow-none btn-group btn-group-sm">Next Page<i class="fa-solid fa-arrow-right" style="padding: 5px;"></i></button>
+          </div>
+</body>
+</html>

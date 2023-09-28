@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/366dffd563.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="/Users/nathanaelkennedy-leroi/Downloads/The%20King's%20Contarian%20Code/Images/KC5.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="statistics.css" rel="stylesheet">
+        <title>The King's Contrarian</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: courier new;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid black;
+  }
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+    .navbar a {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+        <h1 onclick="location.href='index.html'" style="font-family:century schoolbook; cursor: pointer; z-index: 1;">The King's Contrarian<small>Est. 2023</small></h1>
+        <h2 id="current_date"></h2>
+        <style>
+            h2 {
+                font-size: small;
+                font-family: century schoolbook;
+            }
+
+            small {
+                font-size: small;
+            }
+
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+        </style>
+        <script>
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const d = new Date();
+            let day = weekday[d.getDay()];
+            const n = new Date();
+            let day_month = n.getDate();
+            document.getElementById("current_date").innerHTML = day + "," + day_month;
+            const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const m = new Date();
+            let name = month[m.getMonth()];
+            const y = new Date();
+            let year = y.getFullYear();
+            document.getElementById("current_date").innerHTML = day + "," + " " + day_month + " " + name + "," + " " + year;
+        </script>
+        <hr>
+    </div>
+    <div class="container" class="btn btn-primary btn-sm">
+        <style>
+            .container {
+                text-align: center;
+                font-size: small;
+                font-family: century schoolbook;
+                position: relative;
+            }
+        </style>
+        <button onclick="location.href='RealAbout.html'" class="btn btn-outline-dark btn-sm" id="#About">About</button>
+        <button onclick="location.href='BR.html'" class="btn btn-outline-dark btn-sm" id="#BookReviews">Reviews & Recommendations</button>
+        <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
+        <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
+        <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
+    </div>
+    <hr id="hr1">
+    <div class="navbar">
+        <a href="#"><i class="fa-solid fa-arrow-trend-up" style="padding: 20px; color: green;"></i><b onclick="location.href='Stats.html'">Statistics & Data</b><i class="fa-solid fa-arrow-trend-down" style="padding: 20px; color: red;"></i></a>
+      </div>
+      <hr id="hr2">
+<div class="flex-container">
+  <div class="flex-item-left"><iframe style="width: 80%;" title="GDP Growth (%) of the six major economies from 1980-2022 and the IMF estimates for 2022-2027" aria-label="Interactive line chart" id="datawrapper-chart-3QlCU" src="https://datawrapper.dwcdn.net/eCqKY/1/" scrolling="no" frameborder="0" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+  </script></div>
+  <div class="flex-item-right"><iframe style="width: 80%;" title="Unemployment rate (%) in the six major economies from 1980-2022 and the IMF estimate from 2022-2027" aria-label="Interactive line chart" id="datawrapper-chart-3oBQc" src="https://datawrapper.dwcdn.net/7dL00/1/" scrolling="no" frameborder="0" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+  </script></div>
+</div>
+<div class="flex-container">
+    <div class="flex-item-left"><iframe style="width: 80%;" title="Real GDP per capita annual change from 1990-2021 of the ten countries with the highest GDP per capita (excluding the European microstates)" aria-label="Interactive line chart" id="https://datawrapper.dwcdn.net/YOpre/1/" src="https://datawrapper.dwcdn.net/YOpre/1/" scrolling="no" frameborder="0" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+    </script></div>
+    <div class="flex-item-right"><iframe style="width: 80%;" title="Inflation rate (%) of the six major economies from 2020-2022 and the IMF estimates for 2022-2026" aria-label="Interactive line chart" id="datawrapper-chart-ZlzQ7" src="https://datawrapper.dwcdn.net/mb0fX/1/" scrolling="no" frameborder="0" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+    </script></div>
+</div>
+<div class="flex-container">
+    <div class="flex-item-left"><iframe style="width: 80%;" title="Westminster Voting Intention Tracker " aria-label="Interactive line chart" id="datawrapper-chart-eaeaR" src="https://datawrapper.dwcdn.net/F8eL0/1/" scrolling="no" frameborder="0" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+    </script></div>
+    <div class="flex-item-right"><iframe style="width: 80%;"  title="Poverty Rate (%), 2018 (most updated OECD data)" aria-label="Bar Chart" id="datawrapper-chart-cCo8D" src="https://datawrapper.dwcdn.net/Rqw0l/1/" scrolling="no" frameborder="0" height="372"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+    </script></div>
+</div>
+<div class="flex-container">
+    <div class="flex-item-left"><iframe style="width: 80%;" title="Who US voters want in congress" aria-label="Interactive line chart" id="datawrapper-chart-gk8xR" src="https://datawrapper.dwcdn.net/uAIEY/5/" scrolling="no" frameborder="0" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+    </script></div>
+    <div class="flex-item-right"><iframe style="width: 80%;" title="Long-term interest rates (%) of the six major economies from September 2021 - August 2022" aria-label="Interactive line chart" id="datawrapper-chart-yN9C5" src="https://datawrapper.dwcdn.net/yN9C5/2/" scrolling="no" frameborder="0" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+    </script></div>
+</div>
+<div class="flex-container">
+    <div class="flex-item-left"><iframe style="width: 80%;" title="Bank of England weekly outstanding reserve balance liabilities " aria-label="Interactive line chart" id="datawrapper-chart-Zm0wR" src="https://datawrapper.dwcdn.net/Nr2ej/1/" scrolling="no" frameborder="0" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+    </script></div>
+    <div class="flex-item-right"><iframe style="width: 80%;" title="Polling on the percentage of votes for each party ahead of the September 2022 Italian general election" aria-label="Interactive line chart" id="datawrapper-chart-oxUkF" src="https://datawrapper.dwcdn.net/6VTbF/1/" scrolling="no" frameborder="0" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+    </script></div>
+</div>
+<div class="footer">
+    <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
+        <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
+        <button id="subscribe" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link'">Subscribe</button>
+        <button id="donate" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L'">Donate</button>
+        <button id="constitution" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='Con.html'">Constitution</button><br>
+    <a href="https://twitter.com/KingsContrarian" class="fa-brands fa-x-twitter" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+    <a href="https://www.instagram.com/thekingscontrarian/" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/366dffd563.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="/Users/nathanaelkennedy-leroi/Downloads/The%20King's%20Contarian%20Code/Images/KC5.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>The King's Contrarian</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+}
+
+.fa-instagram {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-x-twitter {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-linkedin {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar i {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  float: none;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  transform: translate(-10%, -0%);
+  font-family: courier new;
+}
+
+.main {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.main img {
+    width: 55%; height: auto;
+}
+
+#article {
+    font-family: century schoolbook;
+}
+
+#author {
+    font-family: century schoolbook;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid black;
+  }
+
+
+@media (max-width: 650px) {
+    .navbar i {
+        width: 100%;
+    }
+}
+
+@media (max-width: 412px) {
+    .main {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .main img {
+        width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    br{
+       display: none;
+    }
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+        <h1 onclick="location.href='index.html'" style="font-family:century schoolbook; cursor: pointer; z-index: 1;">The King's Contrarian<small>Est. 2023</small></h1>
+        <h2 id="current_date"></h2>
+        <style>
+            h2 {
+                font-size: small;
+                font-family: century schoolbook;
+            }
+
+            small {
+                font-size: small;
+            }
+
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+        </style>
+        <script>
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const d = new Date();
+            let day = weekday[d.getDay()];
+            const n = new Date();
+            let day_month = n.getDate();
+            document.getElementById("current_date").innerHTML = day + "," + day_month;
+            const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const m = new Date();
+            let name = month[m.getMonth()];
+            const y = new Date();
+            let year = y.getFullYear();
+            document.getElementById("current_date").innerHTML = day + "," + " " + day_month + " " + name + "," + " " + year;
+        </script>
+        <hr>
+    </div>
+    <div class="container" class="btn btn-primary btn-sm">
+        <style>
+            .container {
+                text-align: center;
+                font-size: small;
+                font-family: century schoolbook;
+                position: relative;
+            }
+        </style>
+        <button onclick="location.href='RealAbout.html'" class="btn btn-outline-dark btn-sm" id="#About">About</button>
+        <button onclick="location.href='BR.html'" class="btn btn-outline-dark btn-sm" id="#BookReviews">Reviews & Recommendations</button>
+        <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
+        <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
+        <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
+    </div>
+    <hr>
+    <div class="navbar">
+        <i>Western Politics | Share:<a class="fa fa-x-twitter"></a><a style="padding-left: 5px;" class="fa fa-instagram"></a><a style="padding-left: 5px;" class="fa fa-linkedin"></a></i>
+      </div>
+      <div class="main">
+        <p>
+            <b style="font-family: century schoolbook;"><u>The Untapped Conservative Demographic</u></b>
+        </p>
+        <img src="https://smithsonianassociates.org/ticketing/images/web-core-2018/legacy-of-buckley.jpg" alt="Default Image">
+        <p style="font-family: century schoolbook; font-size: small;">
+        <b>William F. Buckley meeting with President Ronald Reagan</b>
+        </p>
+        <p id="author">
+            <b>By: Mckenzie Rostack | Princeton University</b>
+        </p>
+        <p id="article">
+            Increasingly, the American right has been supportive of an argument premised on restricting immigration <br id="br">
+            to the US. Whilst there are credible arguments for restricting immigration, particularly illegal immigration, <br id="br">
+            I plan to illustrate that if conservatives were more thoughtful and nuanced when addressing this issue amongst <br id="br">
+            others, there is a huge untapped conservative demographic amongst these immigrant communities, that could allow <br id="br">
+            the Republicans to win the popular vote for the first time since 2004. 
+        </p>
+        <p id="article">
+            Despite Ruy Teixeira and John Judis’s claims in 2002 about an emerging democrat majority amongst college educated <br id="br">
+            whites and ethnic minorities, both Hispanics and Asians are actually shifting more right than they are left. <br id="br">
+            Venezuelans fleeing the effects of socialism in their home country could easily become a major voting bloc for <br id="br">
+            the Republican Party, much like the Cuban diaspora already is. In fact, most Hispanic, Asian, African, Caribbean,<br id="br">
+            Middle Eastern and European immigrants to the US tend to lean heavily conservative, particularly on social issues. <br id="br">
+            It is thus astoundingly poor from a political standpoint that the Republicans are still unable to get these <br id="br">
+            groups onside. 
+        </p>
+        <p id="article">
+            I theorise that this is for two key reasons: economic interventionism and lacklustre messaging. Public attitudes <br id="br">
+            towards free-market economics are very low and any positivity around capitalism is hard to come by. A key reason <br id="br">
+            why Trump was both the nominee and elected in 2016 was because of his willingness to embrace protectionism and <br id="br">
+            government intervention in the economy. This appealed to working class people of all races and allowed the <br id="br">
+            Republicans to do significantly better amongst ethnic minorities, stealing many voters who backed Bernie Sanders <br id="br">
+            in the Democrat primaries. That being said, the Republican Party still attempts to message that they are open to <br id="br">
+            fiscal conservatism and free-market economics, despite the backtracks made when in office. 
+        </p>
+        <p id="article">
+            As a result, the party promising huge increases in social security, tax-funded healthcare and the like, do <br id="br">
+            significantly better with a voting base who favours economic interventionism and doesn’t really care for or <br id="br">
+            think about, the long term effects to massive amounts of government spending. Therefore, Republicans can either <br id="br">
+            full-scale abandon their commitments to right wing economic policies or they must do a better job at messaging <br id="br">
+            its benefits to voters. 
+        </p>
+        <p id="article">
+            This poor messaging is apparent outside of economic policy too. Whether its affirmative action, Roe v. Wade, <br id="br">
+            or immigration, the Republican Party can make huge inroads with religious conservative ethnic-minority communities, <br id="br">
+            if they were more thoughtful and nuanced in their dispositions. How is it that the vast majority of Asian-Americans <br id="br">
+            continue to back and vote for a party that openly supports their discrimination or a majority of religious <br id="br">
+            Hispanic-Americans backing a party that is antithetical to traditional religious ideas and practice? 
+        </p>
+        <p id="article">
+            Conservatives must engage in and win the battle of ideas in these communities. There is a base of conservatism <br id="br">
+            to be found, which just needs the correct messaging to bring out. Stop engaging in intraparty warfare, election <br id="br">
+            denial, and Keynesian economics and get back to basics to establish a coalition of ethnically diverse conservatives, <br id="br">
+            that won’t lose a popular vote for years to come. 
+        </p>
+    </div>
+    <div class="footer">
+        <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
+            <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
+            <button id="subscribe" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link'">Subscribe</button>
+            <button id="donate" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L'">Donate</button>
+            <button id="constitution" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='Con.html'">Constitution</button><br>
+        <a href="https://twitter.com/KingsContrarian" class="fa-brands fa-x-twitter" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+        <a href="https://www.instagram.com/thekingscontrarian/" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+      </div>
+    
+    
+    </body>
+    </html>

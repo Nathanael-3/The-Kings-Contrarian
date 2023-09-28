@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/366dffd563.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="/Users/nathanaelkennedy-leroi/Downloads/The%20King's%20Contarian%20Code/Images/KC5.png"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>The King's Contrarian</title>
+
+    </head>
+    <body>
+        <div class="header" style="text-align: center;">
+            <h1 onclick="location.href='index.html'" style="cursor: pointer; z-index: 1;">The King's Contrarian<small>Est. 2023</small></h1>
+            <h2 id="current_date"></h2>
+            <style>
+                * {
+                        box-sizing: border-box;
+                        }
+
+                        .fa-magnifying-glass {
+                            padding-left: 10px;
+                            padding-top: 5px;
+                            font-size: 20px;
+                            width: 25px;
+                            height: 25px;
+                            text-align: center;
+                            text-decoration: none;
+                            color: black;
+                            }
+
+                            .modal-header {
+                                position: relative;
+                                }
+
+                                .modal-title {
+                                position: absolute;
+                                left: 120px;
+                                font-family: helvetica;
+                                font-size: 16px;
+                                }
+
+
+                                .modal-body {
+                                font-family: helvetica;
+                                font-size: small;
+                                }
+
+                                #myInput {
+                                    height: 35px;
+                                    width: 750px;
+                                    }
+
+                                #hr1 {
+                                    margin-right: 15%;
+                                    margin-left: 15%;
+                                    
+                                }
+
+                                #hr2 {
+                                    margin-right: 15%;
+                                    margin-left: 15%;
+                                    
+                                }
+
+
+                        .flex-container {
+                        display: flex;
+                        flex-direction: row;
+                        }
+
+                        .flex-item-left {
+                            padding: 10px;
+                            flex: 35%;
+                            padding-right: 35px;
+                            padding-top: 60px;
+                        }
+
+                        .flex-item-left img {
+                            width: 100%; height:auto;
+                        }
+
+
+                        .flex-item-left-left {
+                            padding: 10px;
+                            flex: 35%;
+                            text-align: right;
+                            padding-top: 60px;
+                        }
+
+                        .flex-item-left-left h1 {
+                            font-size: 1.1vw;
+                        }
+
+                        .flex-item-left-left ul {
+                            font-size: 0.9vw;
+                        }
+
+
+                        .flex-item-left-left p {
+                            font-size: 0.9vw;
+                        }
+
+                        .flex-item-right {
+                        padding: 10px;
+                        flex: 30%;
+                        border-left: 0.1px solid lightgrey;
+                        }
+
+                        #third:after {
+                            content: ""; /* This is necessary for the pseudo element to work. */ 
+                            display: block; /* This will put the pseudo element on its own line. */
+                            margin: 0 auto; /* This will center the border. */
+                            width: 65%; /* Change this to whatever width you want. */
+                            padding-top: 20px; /* This creates some space between the element and the border. */
+                            border-bottom: 0.1px solid lightgrey; /* This creates the border. Replace black with whatever color you want. */
+                        }
+
+                        #last {
+                            border-bottom: none;
+                        }
+
+                        #mobile {
+                            display: none;
+                        }
+
+
+                        h2 {
+                    font-size: small;
+                    font-family: century schoolbook;
+                }
+
+                small {
+                    font-size: small;
+                }
+
+                body {
+                    max-width: 100%;
+                    overflow-x: hidden;
+                    text-align: center;
+                    font-size: small;
+                    font-family: century schoolbook;
+
+                }
+
+                .navbar {
+                    display: flex;
+                }
+
+                .navbar i {
+                    color: black;
+                    padding: 14px 20px;
+                    text-decoration: none;
+                    text-align: center;
+                    float: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: courier new;
+                    width: 100%;
+                }
+
+                .footer {
+                    padding: 20px;
+                    text-align: center;
+                    border-top: 0.5px solid black;
+                }
+
+                #nextpage {
+                    z-index:99;
+                }
+
+                /* Responsive layout - makes a one column-layout instead of two-column layout */
+                    @media (max-width: 461px) {
+                        .navbar {
+                            display: none;
+                        }
+                    }
+                
+                    @media (max-width: 461px) {
+                        #hr1 {
+                            display: none;
+                        }
+                    }
+
+                    @media (max-width: 461px) {
+                        #hr2 {
+                            margin-right: 0%;
+                            margin-left: 0%;
+                        }
+                    }
+                
+                @media (max-width: 850px) {
+                        .flex-container {
+                            flex-direction: column-reverse;
+                            }
+                        }
+
+                        @media (max-width: 850px) {
+                        .flex-item-left img {
+                            width: 80%; height: auto;
+                            }
+                        }
+
+                        @media (max-width: 850px) {
+                        .flex-item-left {
+                                padding-top: 10px;
+                                padding-right: 10px;
+                            }
+                        }
+            
+                    @media (max-width: 850px) {
+                    .flex-item-right {
+                            display: none;
+                            }
+                        }
+
+                    @media (max-width: 850px) {
+                        .flex-item-left-left {
+                            text-align: center;
+                            border-bottom: 0.1px solid lightgrey;
+                            padding-top: 0px;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        #mobile {
+                            display: flex;
+                            }
+                        }
+
+                    @media (max-width: 850px) {
+                        #hr3, #hr4, #hr5, #hr6 {
+                            display: none;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        #br {
+                            display: none;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        .flex-item-left-left h1 {
+                            font-size: 16px;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        .flex-item-left-left ul {
+                            font-size: 14px;
+                            width: 90%;
+                            text-align: center;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        .flex-item-left-left p {
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        #text {
+                            display: none;
+                        }
+                    }
+
+                    @media (max-width: 850px) {
+                        #nextpage {
+                            display: none;
+                        }
+                    }
+
+            </style>
+            <script>
+                const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                const d = new Date();
+                let day = weekday[d.getDay()];
+                const n = new Date();
+                let day_month = n.getDate();
+                document.getElementById("current_date").innerHTML = day + "," + day_month;
+                const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+                const m = new Date();
+                let name = month[m.getMonth()];
+                const y = new Date();
+                let year = y.getFullYear();
+                document.getElementById("current_date").innerHTML = day + "," + " " + day_month + " " + name + "," + " " + year;
+            </script>
+            <hr>
+        </div>
+        <div class="container" class="btn btn-primary btn-sm">
+            <button onclick="location.href='RealAbout.html'" class="btn btn-outline-dark btn-sm" id="#About">About</button>
+            <button onclick="location.href='BR.html'" class="btn btn-outline-dark btn-sm" id="#BookReviews">Reviews & Recommendations</button>
+            <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
+            <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
+            <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" class="fa fa-magnifying-glass" onclick="myFunction()"></a>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="dropdown">
+                                <input id="myInput" type="search" id="form1" class="form-control" placeholder="Search..." onkeyup="filterFunction()">
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#first" onclick="location.href='BEPage.html'"><b>Are East And West At An Impasse? A Story Told Through The Chinese Semiconductor Industry</b></a>
+                                    <a href="#second" onclick="location.href='BEPage2.html'"><b>It's Time We Privatised The NHS</b></a>
+                                    <a href="#third" onclick="location.href='WPPage.html'"><b>The Star-Spangled Banner Should Remain Waving, Full Mast, O’er The Land Of The Free And The Home Of The Brave</b></a>
+                                    <a href="#fourth" onclick="location.href='BEPage3.html'"><b>The Threat Of Rising National Debt</b></a>
+                                    <a href="#fifth" onclick="location.href='WPPage2.html'"><b>The Christian Case For A British Style Monarchy</b></a>
+                                    <a href="#sixth" onclick="location.href='WEPage.html'"><b>A Once Great Alliance Has A New Black Sheep</b></a>
+                                    <a href="#seventh" onclick="location.href='WPPage3.html'"><b>The Untapped Conservative Demographic</b></a>
+                                    <a href="#eigth" onclick="location.href='WEPage2.html'"><b>A Short Exposé On US-China Relations </b></a>
+                                    <a href="#ninth" onclick="location.href='WPPage4.html'"><b>Affirmative Action, DEI And What It All Means For The UK </b></a>
+                                    <a href="#tenth" onclick="location.href='WPPage5.html'"><b>Do You Feel Represented? A Case For British Localism </b></a>
+                                    <a href="#eleventh" onclick="location.href='BRPage.html'"><b>The Ultimate Pursuit of Knowledge: Mathematics, Philosophy, and History </b></a>
+                                    <a href="#twelth" onclick="location.href='WPPage6.html'"><b>What Are We To Make Of The News Of High Schools Withholding Notifications Of National Merit Awards? </b></a>
+                                    <style>
+                                        .dropdown {
+                                            position: relative;
+                                            display: inline-block;
+                                        }
+                                        .dropdown-content a {
+                                            color: black;
+                                            padding: 12px 16px;
+                                            text-decoration: none;
+                                            display: block;
+                                            text-align: left;
+                                            font-family: century schoolbook;
+                                        }
+                                        .dropdown-content a:hover {background-color: #f1f1f1}
+
+                                    </style>
+                                    <script>
+
+                                        function myFunction() {
+                                            document.getElementById("myDropdown").style.display = 'none';
+                                            }
+
+
+
+                                        function filterFunction() {
+                                            document.getElementById('myDropdown').style.display = 'initial';
+                                            var input, filter, ul, li, a, i;
+                                            input = document.getElementById("myInput");
+                                            filter = input.value.toUpperCase();
+                                            div = document.getElementById("myDropdown");
+                                            a = div.getElementsByTagName("a");
+                                            for (i = 0; i < a.length; i++) {
+                                                txtValue = a[i].textContent || a[i].innerText;
+                                                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                                    a[i].style.display = "";
+                                                } else {
+                                                    a[i].style.display = "none";
+
+                                                }
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+            <hr id="hr1">
+        <div class="navbar">
+            <i><b>Help support the journalism at The King's Contrarian by <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link">subscribing to our newsletter</a> or <a href="https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L" style="cursor: pointer;">giving a donation!</a></b></i>
+        </div>
+            <hr id="hr2">
+        <div class="flex-container">
+            <div class="flex-item-left-left" id="first">
+                <h1 onclick="location.href='BEPage.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>Are East And West At An Impasse?<br id="br"> 
+                    A Story Told Through The Chinese<br>
+                    Semiconductor Industry</b></h1>
+                <p>
+                    <ul onclick="location.href='BEPage.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>Huawei, a leading mobile phone brand from China,<br id="br">
+                            recently showcased its advanced Mate 60 Pro. <br id="br">
+                            The global tech community was taken aback to <br id="br">
+                            discover that this device is driven by a <br id="br">
+                            7-nanometre (nm) processor. This revelation <br id="br">
+                            has ignited discussions about the true current ... 
+                        </li>
+                        
+                        <li style="padding-top: 0.5em" id="text">This article aims to delve into the extent<br id="br">
+                            that US sanctions have worked in halting<br id="br">
+                            Chinese technonological progress, particularly<br id="br">
+                            in the semiconductor industry, and the issues<br id="br">
+                            that the Chinese are having in keeping<br id="br">
+                            up with the other technology powerhouses.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Mohammad Omar Farooq Ahsan  |  University of Manchester</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;" id="second">
+                <img style="cursor: pointer; z-index: 99;" src="https://internationalbanker.com/wp-content/uploads/2023/04/China-Chips.png" alt="default image" onclick="location.href='BEPage.html'"/>
+            </div>
+            <div class="flex-item-right" style="text-align: center;" id="third">
+                <img style="cursor: pointer; z-index: 99; width: 70%; height: auto;" src="https://static.independent.co.uk/2023/08/10/00/8ae4857227d1c13d81aafdfea7b31f1dY29udGVudHNlYXJjaGFwaSwxNjkxNjc0ODI2-2.72968930.jpg" alt="default image" onclick="location.href='BEPage2.html'" />
+                <h1 onclick="location.href='BEPage2.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99; font-size: 1.1vw;"><b>It's Time We Privatised
+                    <br>The NHS</b></h1>
+                    <p onclick="location.href='BEPage2.html'" style="padding-top: 0.5em; cursor: pointer; z-index: 99; font-size: 0.9vw">
+                        With median waiting times at thirteen weeks and <br>
+                        increasingly common horror stories of those with <br>
+                        serious illnesses having to wait months or even years <br>
+                        for treatment, it is evident that the NHS is in need <br>
+                        of reform. This stark reality was on full display ...
+                    </p>
+                    <p style="font-size: 0.9vw;">
+                        <b>Stephen Pina  |  University of St Andrews</b>
+                    </p>
+            </div> 
+        </div>
+        <hr id="hr3" style="margin-left: 15%; margin-right: 30%;">
+        <div class="flex-container">
+            <div class="flex-item-left-left" id="fourth">
+                <h1 onclick="location.href='WPPage.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99; padding-top: 0px;"><b>The Star-Spangled Banner Should Remain<br id="br"> Waving, Full Mast, O’er The Land Of The Free <br id="br"> And The Home Of The Brave</b></h1>
+                    <p>
+                        <ul onclick="location.href='WPPage.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                            <li>Americans are flag obsessed to the point of shocking <br id="br">
+                                the self-effacing British conscience. Just ask CNN <br id="br">
+                                contributor Laura Beers, who claims her English husband <br id="br">
+                                detects “sinister overtones of interwar dictatorship” <br id="br">
+                                in the way American students traditionally start the <br id="br">
+                                day—by pledging allegiance to the flag ... <br id="br">
+                            </li>
+                            <li style="padding-top: 0.5em;" id="text">The US has a set of stringent flag codes <br id="br">
+                                that members of government are supposed to adhere to,<br id="br">
+                                yet many seem to be failing in their duty to do so.<br id="br">
+                                The US flag is being flown at half mast far too often<br id="br">
+                                and at times for the wrong reasons. The US flag has a <br id="br">
+                                storied history which deserves respect, do state<br id="br">
+                                governors still believe this is the case?
+                            </li>
+                        </ul>
+                    </p>
+                <p>
+                    <b>Grant Wernick  |  Duke University</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;" id="fifth">
+                <img style="cursor: pointer; z-index: 99;" src="https://media.istockphoto.com/id/522897875/photo/us-flags-at-half-staff-and-statue-of-liberty.jpg?s=612x612&w=0&k=20&c=OPJA1dCl2PJUC_RyZqGOdFWD6zcWEUpsRlkNELU05CI=" alt="default image" onclick="location.href='WPPage.html'"/>
+            </div>
+            <div class="flex-item-right" style="text-align: center;" id="third">
+                <img style="cursor: pointer; z-index: 99; width: 70%; height: auto;" src="https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1323938546/image_1323938546.jpg?io=getty-c-w750" alt="default image" width="300" height="200" onclick="location.href='BEPage3.html'" />
+                <h1 onclick="location.href='BEPage3.html'" style="font-family: american typewriter; font-size: 1.1vw; cursor: pointer; z-index: 99;"><b>The Threat Of Rising <br> National Debt</b></h1>
+                    <p onclick="location.href='BEPage3.html'" style="padding-top: 0.5em; cursor: pointer; z-index: 99; font-size: 0.9vw">
+                        National debts are rising worldwide with many of the <br>
+                        largest economies having debts in excess of 100% of <br>
+                        gross domestic product (GDP). Japan for example has <br>
+                        a debt-to-GDP ratio of 263%, whilst the US is at 123%. <br>
+                        National debt is defined as the total sum of money that ...    
+                    </p>
+                    <p style="font-size: 0.9vw;">
+                        <b>Colin Yin |  Harvard University</b>
+                    </p>
+            </div>  
+        </div>
+        <hr id="hr4" style="margin-left: 15%; margin-right: 30%;">
+        <div class="flex-container">
+            <div class="flex-item-left-left" id="fourth">
+                <h1 onclick="location.href='WPPage2.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>The Christian Case For <br id="br"> A British Style Monarchy</b></h1>
+                <p>
+                    <ul onclick="location.href='WPPage2.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>A few weeks ago, we commemorated one year <br id="br">
+                            since the death of Queen Elizabeth II and <br id="br">
+                            King Charles III’s accession to the throne.  <br id="br">
+                            This commemoration was juxtaposed with the <br id="br">
+                            release of a YouGov opinion poll, which showed <br id="br">
+                            that, among 18 to 24-year-olds, only 30% say ... <br id="br">
+                        </li>
+                        <li style="padding-top: 0.5em" id="text">A plurality of young people are now in favour of 
+                            <br id="br">disbanding the monarchy and establishing
+                            <br id="br">a British republic. What does this mean
+                            <br id="br">for people of faith and as a result British
+                            <br id="br">society more broadly? Is there a case to be
+                            <br id="br">made for the continuation of the monarchy?
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Henri Rossano  |  Durham University</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;" id="fifth">
+                <img style="cursor: pointer; z-index: 99;" src="https://assets.vogue.com/photos/6216b2258729a2758e0b562a/3:2/w_3498,h_2332,c_limit/1175944922" alt="default image" onclick="location.href='WPPage2.html'"/>
+            </div>
+            <div class="flex-item-right" style="text-align: center; " id="third">
+                <img style="cursor: pointer; z-index: 99; width: 70%; height: auto;" src="https://caspiannews.com/media/caspian_news/all_original_photos/1669751821_5412638_1669751717_7500622putin_tokayev.jpeg" alt="default image" width="300" height="200" onclick="location.href='WEPage.html'" />
+                <h1 onclick="location.href='WEPage.html'" style="font-family: american typewriter; font-size: 1.1vw; cursor: pointer; z-index: 99;"><b>A Once Great Alliance <br> Has A New Black Sheep</b></h1>
+                    <p onclick="location.href='WEPage.html'" style="padding-top: 0.5em; cursor: pointer; z-index: 99; font-size: 0.9vw">
+                        Russian foreign policy traditions can be <br>
+                        contextualized as a linear path from the  <br>
+                        material to the social and back to the material.  <br>
+                        It begins with the unique geographical implications  <br>
+                        that Russia faces, for example the size of ...  <br>
+                    </p>
+                    <p style="font-size: 0.9vw;">
+                        <b>Nathanael Kennedy-Leroi  |  King's College London</b>
+                    </p>
+            </div> 
+        </div>
+        <hr id="hr5" style="margin-left: 15%; margin-right: 30%;">
+        <div class="flex-container">
+            <div class="flex-item-left-left" id="fourth">
+                <h1 onclick="location.href='WPPage3.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>The Untapped <br id="br"> Conservative Demographic</b></h1>
+                <p>
+                    <ul onclick="location.href='WPPage3.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>Increasingly, the American right has been supportive <br id="br">
+                            of an argument premised on restricting immigration <br id="br">
+                            to the US. Whilst there are credible arguments for <br id="br">
+                            restricting immigration, particularly illegal <br id="br">
+                            immigration, I plan to illustrate that if conservatives <br id="br">
+                             were more thoughtful and nuanced when addressing this ... <br id="br">
+                            
+                        </li>
+                        <li style="padding-top: 0.5em" id="text">How can American conservatives make inroads with
+                            <br id="br">immigrant communities, who often share many
+                            <br id="br">of the same conservative principles? The
+                            <br id="br">Republican party has not won the popular vote
+                            <br id="br">since 2004, something needs to change, could
+                            <br id="br">this be the answer?
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Mckenzie Rostack  |  Princeton University</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;" id="fifth">
+                <img style="cursor: pointer; z-index: 99;" src="https://smithsonianassociates.org/ticketing/images/web-core-2018/legacy-of-buckley.jpg" alt="default image" onclick="location.href='WPPage3.html'"/>
+            </div>
+            <div class="flex-item-right" style="text-align: center;" id="third">
+                <img style="cursor: pointer; z-index: 99; width: 70%; height: auto;" src="https://static01.nyt.com/images/2023/06/22/multimedia/00up-cold-war2-tjwk/00up-cold-war2-tjwk-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="default image" width="300" height="200" onclick="location.href='WEPage2.html'" />
+                <h1 onclick="location.href='WEPage2.html'" style="font-family: american typewriter; font-size: 1.1vw; cursor: pointer; z-index: 99;"><b>A Short Exposé <br id="br">On US-China Relations </b></h1>
+                    <p onclick="location.href='WEPage2.html'" style="padding-top: 0.5em; cursor: pointer; z-index: 99; font-size: 0.9vw">
+                        The US and China have a long and rich history <br>
+                        that in recent years has meant an extraordinary <br>
+                        amount of economic collaboration. However, both <br>
+                        the US and China have turned towards protectionism <br>
+                        as their relationship has tensed. In this short ...
+                    </p>
+                    <p style="font-size: 0.9vw;">
+                        <b>Jason Tu  |  University College London</b>
+                    </p>
+            </div> 
+        </div>
+        <hr id="hr6" style="margin-left: 15%; margin-right: 30%;">
+        <div class="flex-container">
+            <div class="flex-item-left-left">
+                <h1 onclick="location.href='WPPage4.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>Affirmative Action, DEI And <br id="br"> What It All Means For The UK</b></h1>
+                <p>
+                    <ul onclick="location.href='WPPage4.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>In the US, since Regents of the University of <br id="br">
+                            California v. Bakke in 1978 the use of race-based <br id="br">
+                            affirmative action was permitted, under the <br id="br">
+                            presumption that universities with students from <br id="br">
+                            diverse racial backgrounds, encourages diversity <br id="br">
+                            of thought and thus improves educational ... <br id="br">
+                        </li>
+                        <li style="padding-top: 0.5em;" id="text">This article seeks to weigh up the decision
+                            <br id="br">in Students For Fair Admissions v. Harvard University
+                            <br id="br">and what's its implications are to diversity, equity,
+                            <br id="br">and inclusion (DEI) programmes across the US. It then
+                            <br id="br">discusses whether this will have any effect on the
+                            <br id="br">UK, as DEI programmes come under increasing scrutiny.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Saket Mistri  |  University of Oxford</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;">
+                <img style="cursor: pointer; z-index: 99;" src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/TLRIWNSMQ5LUVHVWQ43JGQU6Q4.jpg" alt="default image" onclick="location.href='WPPage4.html'"/>
+            </div>
+            <div class="flex-item-right" style="text-align: center; border-bottom: none;">
+                <img style="cursor: pointer; z-index: 99; width: 70%; height: auto;" src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2021/07/CLI313.village_novels.GettyImages157006201.jpg" alt="default image" width="300" height="200" onclick="location.href='WPPage5.html'" />
+                <h1 onclick="location.href='WPPage5.html'" style="font-family: american typewriter; font-size: 1.1vw; cursor: pointer; z-index: 99;"><b>Do You Feel Represented? <br> A Case For British Localism</b></h1>
+                    <p onclick="location.href='WPPage5.html'" style="padding-top: 0.5em; cursor: pointer; z-index: 99; font-size: 0.9vw">
+                        The UK is made up of 650 constituencies across <br>
+                        its four countries, each with different political <br>
+                        persuasions, needs, and desires. Yet, the power <br>
+                        that constituencies have to shape their local <br>
+                        communities through taxation to education to ...
+                    </p>
+                    <p style="font-size: 0.9vw;">
+                        <b>The Editorial Board</b>
+                    </p>
+            </div> 
+        </div>
+        <div class="flex-container" id="mobile">
+            <div class="flex-item-left-left">
+                <h1 onclick="location.href='BEPage2.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>It's Time We Privatised
+                    <br id="br">The NHS</b></h1>
+                <p>
+                    <ul onclick="location.href='BEPage2.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>With median waiting times at thirteen weeks and <br id="br">
+                            increasingly common horror stories of those with <br id="br">
+                            serious illnesses having to wait months or even years <br id="br">
+                            for treatment, it is evident that the NHS is in need <br id="br">
+                            of reform. This stark reality was on full display ...
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Stephen Pina  |  University of St Andrews</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;">
+                <img style="cursor: pointer; z-index: 99;" src="https://static.independent.co.uk/2023/08/10/00/8ae4857227d1c13d81aafdfea7b31f1dY29udGVudHNlYXJjaGFwaSwxNjkxNjc0ODI2-2.72968930.jpg" alt="default image" onclick="location.href='BEPage2.html'"/>
+            </div>
+        </div>
+        <div class="flex-container" id="mobile">
+            <div class="flex-item-left-left">
+                <h1 onclick="location.href='BEPage3.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>The Threat Of Rising <br id="br"> National Debt</b></h1>
+                <p>
+                    <ul onclick="location.href='BEPage3.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>National debts are rising worldwide with many of the <br id="br">
+                            largest economies having debts in excess of 100% of <br id="br">
+                            gross domestic product (GDP). Japan for example has <br id="br">
+                            a debt-to-GDP ratio of 263%, whilst the US is at 123%. <br id="br">
+                            National debt is defined as the total sum of money that ... 
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Colin Yin |  Harvard University</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;">
+                <img style="cursor: pointer; z-index: 99;" src="https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1323938546/image_1323938546.jpg?io=getty-c-w750" alt="default image" onclick="location.href='BEPage3.html'"/>
+            </div>
+        </div>
+        <div class="flex-container" id="mobile">
+            <div class="flex-item-left-left">
+                <h1 onclick="location.href='WEPage2.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>A Once Great Alliance <br id="br"> Has A New Black Sheep</b></h1>
+                <p>
+                    <ul onclick="location.href='WEPage2.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>Russian foreign policy traditions can be <br id="br">
+                            contextualized as a linear path from the  <br id="br">
+                            material to the social and back to the material.  <br id="br">
+                            It begins with the unique geographical implications  <br id="br">
+                            that Russia faces, for example the size of ... 
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Nathanael Kennedy-Leroi  |  King's College London</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;">
+                <img style="cursor: pointer; z-index: 99;" src="https://caspiannews.com/media/caspian_news/all_original_photos/1669751821_5412638_1669751717_7500622putin_tokayev.jpeg" alt="default image" onclick="location.href='WEPage2.html'"/>
+            </div>
+        </div>
+        <div class="flex-container" id="mobile">
+            <div class="flex-item-left-left">
+                <h1 onclick="location.href='WEPage.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>A Short Exposé <br id="br">On US-China Relations </b></h1>
+                <p>
+                    <ul onclick="location.href='WEPage.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>The US and China have a long and rich history <br id="br">
+                            that in recent years has meant an extraordinary <br id="br">
+                            amount of economic collaboration. However, both <br id="br">
+                            the US and China have turned towards protectionism <br id="br">
+                            as their relationship has tensed. In this short ...
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Jason Tu  |  University College London</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;">
+                <img style="cursor: pointer; z-index: 99;" src="https://static01.nyt.com/images/2023/06/22/multimedia/00up-cold-war2-tjwk/00up-cold-war2-tjwk-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="default image" onclick="location.href='WEPage.html'"/>
+            </div>
+        </div>
+        <div class="flex-container" id="mobile">
+            <div class="flex-item-left-left">
+                <h1 onclick="location.href='WPPage5.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>Do You Feel Represented? <br id="br"> A Case For British Localism</b></h1>
+                <p>
+                    <ul onclick="location.href='WPPage5.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>The UK is made up of 650 constituencies across <br id="br">
+                            its four countries, each with different political <br id="br">
+                            persuasions, needs, and desires. Yet, the power <br id="br">
+                            that constituencies have to shape their local <br id="br">
+                            communities through taxation to education to ...
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>The Editorial Board</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;">
+                <img style="cursor: pointer; z-index: 99;" src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2021/07/CLI313.village_novels.GettyImages157006201.jpg" alt="default image" onclick="location.href='WPPage5.html'"/>
+            </div>
+        </div>
+        <div class="flex-container" id="mobile">
+            <div class="flex-item-left-left">
+                <h1 onclick="location.href='BRPage.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>The Ultimate Pursuit of Knowledge: <br id="br"> Mathematics, Philosophy, and History</b></h1>
+                <p>
+                    <ul onclick="location.href='BRPage.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>College is about the application of knowledge <br id="br">
+                            in the pursuit of truth. Yet, this mission <br id="br">
+                            has largely gone astray from campuses across <br id="br">
+                            America, as college becomes increasingly about <br id="br">
+                            credentials, politics, and incessant specialisation. <br id="br">
+                            Our Founding Founders were not interested in ...
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Marcus Johansson  |  The University of Texas at Austin</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;">
+                <img style="cursor: pointer; z-index: 99;" src="https://omnia.sas.upenn.edu/sites/default/files/iStock-91839945.jpg" alt="default image" onclick="location.href='BRPage.html'"/>
+            </div>
+        </div>
+        <div class="flex-container" id="mobile">
+            <div class="flex-item-left-left">
+                <h1 onclick="location.href='WPPage6.html'" style="font-family: american typewriter; cursor: pointer; z-index: 99;"><b>What Are We To Make Of The News <br id="br"> Of High Schools Withholding Notifications <br id="br"> Of National Merit Awards?</b></h1>
+                <p>
+                    <ul onclick="location.href='WPPage6.html'" style="list-style-type: none; cursor: pointer; z-index: 99;">
+                        <li>It is unjust that one should be penalised because <br id="br">
+                            of a desire for absolute equality, which, make no <br id="br">
+                            mistake is the ultimate goal of these initiatives. <br id="br">
+                            It harms not only the person whose award was <br id="br">
+                            withheld from them, but also those that the schools ...
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <b>Nathanael Kennedy-Leroi  |  King's College London <br> (As published in the Wall Street Journal)</b>
+                </p>
+                </div>
+            <div class="flex-item-left" style="text-align: center;">
+                <img style="cursor: pointer; z-index: 99;" src="https://www.usnews.com/object/image/00000178-b72c-dce3-a1fb-bfadf1d10000/210409-thomasjefferson1-submitted.jpg?update-time=1617980946956&size=responsive640" alt="default image" onclick="location.href='WPPage6.html'"/>
+            </div>
+        </div>
+        <div class="footer">
+            <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
+                <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
+                <button id="subscribe" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link'">Subscribe</button>
+                <button id="donate" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L'">Donate</button>
+                <button id="constitution" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='Con.html'">Constitution</button><br>
+            <a href="https://twitter.com/KingsContrarian" class="fa-brands fa-x-twitter" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+            <a href="https://www.instagram.com/thekingscontrarian/" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a><br>
+            <button type="button" id="nextpage" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='index2.html'">Next Page<i class="fa-solid fa-arrow-right" style="padding: 5px;"></i> | 1/2</button>
+          </div>
+</body>
+</html>

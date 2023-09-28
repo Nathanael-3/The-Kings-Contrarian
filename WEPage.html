@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/366dffd563.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="/Users/nathanaelkennedy-leroi/Downloads/The%20King's%20Contarian%20Code/Images/KC5.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>The King's Contrarian</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+}
+
+.fa-instagram {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-x-twitter {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-linkedin {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar i {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  float: none;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  transform: translate(-10%, -0%);
+  font-family: courier new;
+}
+
+.main {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.main img {
+    width: 55%; height: auto;
+}
+
+#article {
+    font-family: century schoolbook;
+}
+
+#author {
+    font-family: century schoolbook;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid black;
+  }
+
+
+@media (max-width: 650px) {
+    .navbar i {
+        width: 100%;
+    }
+}
+
+@media (max-width: 412px) {
+    .main {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .main img {
+        width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    br{
+       display: none;
+    }
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+        <h1 onclick="location.href='index.html'" style="font-family:century schoolbook; cursor: pointer; z-index: 1;">The King's Contrarian<small>Est. 2023</small></h1>
+        <h2 id="current_date"></h2>
+        <style>
+            h2 {
+                font-size: small;
+                font-family: century schoolbook;
+            }
+
+            small {
+                font-size: small;
+            }
+
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+        </style>
+        <script>
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const d = new Date();
+            let day = weekday[d.getDay()];
+            const n = new Date();
+            let day_month = n.getDate();
+            document.getElementById("current_date").innerHTML = day + "," + day_month;
+            const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const m = new Date();
+            let name = month[m.getMonth()];
+            const y = new Date();
+            let year = y.getFullYear();
+            document.getElementById("current_date").innerHTML = day + "," + " " + day_month + " " + name + "," + " " + year;
+        </script>
+        <hr>
+    </div>
+    <div class="container" class="btn btn-primary btn-sm">
+        <style>
+            .container {
+                text-align: center;
+                font-size: small;
+                font-family: century schoolbook;
+                position: relative;
+            }
+        </style>
+        <button onclick="location.href='RealAbout.html'" class="btn btn-outline-dark btn-sm" id="#About">About</button>
+        <button onclick="location.href='BR.html'" class="btn btn-outline-dark btn-sm" id="#BookReviews">Reviews & Recommendations</button>
+        <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
+        <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
+        <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
+    </div>
+    <hr>
+    <div class="navbar">
+        <i>World Events | Share:<a class="fa fa-x-twitter"></a><a style="padding-left: 5px;" class="fa fa-instagram"></a><a style="padding-left: 5px;" class="fa fa-linkedin"></a></i>
+      </div>
+      <div class="main">
+        <p>
+            <b style="font-family: century schoolbook;"><u>A Once Great Alliance Has A New Black Sheep</u></b>
+        </p>
+        <img src="https://caspiannews.com/media/caspian_news/all_original_photos/1669751821_5412638_1669751717_7500622putin_tokayev.jpeg" alt="Default Image">
+        <p style="font-family: century schoolbook; font-size: small;">
+        <b>Russian President Vladimir Putin shaking hands with Kazkah President Kassym-Jomart Tokayev</b>
+        </p>
+        <p id="author">
+            <b>By: Nathanael Kennedy-Leroi | King's College London</b>
+        </p>
+        <p id="article">
+            Russian foreign policy traditions can be contextualized as a linear path from the material to the social <br id="br">
+            and back to the material. It begins with the unique geographical implications that Russia faces, for example <br id="br">
+            the size of the nation, the fact that it has very few paths to the ocean, its harsh conditions and most <br id="br">
+            importantly for this article, its geographical weakness from the Ukrainian heartlands. This material geographic <br id="br">
+            uniqueness creates a culture of constructivism that materializes in Russian exceptionalism. Rhetoric associated <br id="br">
+            with Russia being destined to be a great power, harking back to its days of imperial expansion under the <br id="br">
+            Russian Empire and the USSR, led by ‘great’ political leaders like Peter the Great and Joseph Stalin come from <br id="br">
+            this geographic abnormality. This constructivist approach to foreign policy then influences the individual level <br id="br">
+            of FPA, where the Russian people associate its great power with strong autocratic leaders governing the country. <br id="br">
+            Despite years of persecution, famine, slavery and poverty, 51% of Russians still claim that they admire and like <br id="br">
+            Joseph Stalin. The association between great power and a great leader has allowed Putin to cement his role as a <br id="br">
+            dictator and to largely go unchallenged in his foreign policy prognosis. This focus on the individual level in <br id="br">
+            Russia then ends up culminating in a realist foreign policy tradition. Its geography, that constructs a great <br id="br">
+            power identity wielded by an autocrat means that Russia longs for a sphere of influence and remains constantly <br id="br">
+            paranoid of foreign incursions. This paranoia makes Russia deeply suspicious of its neighbors and the <br id="br">
+            international system at large, arguing that they are constantly duping the motherland. As Mearsheimer points <br id="br">
+            out, this paranoia grows exponentially as NATO expands up to the Russian border. Russia thus sees itself as a <br id="br">
+            lone wolf in the international system, therefore relying on power politics for its foreign policy <br id="br">
+            decision-making. These sentiments culminate in Russia regularly showing its military might to its neighbors, <br id="br">
+            Ukraine being the crescendo. 
+        </p>
+        <p id="article">
+            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Comparing The Broader Post-Soviet Space</u></b></h2>
+            Ex-Soviet nations have taken wildly disparate paths in their attitudes to Russia and the international system <br id="br">
+            more broadly. The Baltic nations have opted for a primarily liberal approach to foreign policy, integrating <br id="br">
+            into both NATO and the EU and aligning themselves with the West. Now all three are members of the Eurozone and <br id="br">
+            have a strong democratic reputation. This group of nations represents one extreme, the other extreme are nations <br id="br">
+            that remain strongly aligned to Russia, rejecting any Western cooperation and having strong Kremlin-aligned <br id="br">
+            autocratic leaders. These nations include Belarus, Armenia, Kazakhstan, Kyrgyzstan, and Tajikistan. These <br id="br">
+            nations for the most part have operated within the realist framework, realizing that their best option, both <br id="br">
+            for their leaders to stay in power and for the survival and health of their nations, is to align themselves <br id="br">
+            very closely with Russia. These five nations are all run by individual dictators, thus the foreign policy <br id="br">
+            decision-making is heavily linked to individual leaders, often acting out of the interest in the survival <br id="br">
+            of their regimes. More middle of the road nations that have adopted an approach of, at times Russian <br id="br">
+            alignment and at times Western alignment, include Ukraine, Moldova, Georgia and Azerbaijan. These nations <br id="br">
+            have all sought closer relations with the West but have often been either enticed away by Russia or in the <br id="br">
+            case of Ukraine and Georgia; military action has taken place. These nations have largely adopted a pragmatic <br id="br">
+            alternating theoretical approach to foreign policy that can only be highlighted through a comparison between <br id="br">
+            the various other post-Soviet space countries. These nations don’t adhere strictly to one theoretical <br id="br">
+            approach. Yet, for this article I will aim to address the diverging stances taken by two of Russia’s closest <br id="br">
+            allies, Kazakhstan and Belarus.
+        </p>
+        <p id="article">
+            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Kazakhstan</u></b></h2>
+            Kazakhstan is an oil rich Central Asian nation with a population of around 20 million people. It gained <br id="br">
+            independence from the USSR in 1991 and has remained heavily aligned to Russia for much of its independent <br id="br">
+            history. In fact, for much of this time it was widely considered as Russia’s second strongest ally after <br id="br">
+            Belarus. It is a member of the CSTO, which is the Russian response to NATO, and its president Kassym-Jomart <br id="br">
+            Tokayev was able to remain in power thanks to Russian backing after political turmoil. This stance however <br id="br">
+            was not one of affinity for Russia but of political pragmatism. Russia had a regional hegemony over Central <br id="br">
+            Asia, accounting for a huge amount of trade with Kazakhstan and for its political leaders as a way to <br id="br">
+            maintain power. This for the time being meant it was in the interest for Kazakhstani leaders to remain on <br id="br">
+            the side of Russia. Yet, after the invasion of Ukraine and since the rise of China, Kazakhstan has become <br id="br">
+            somewhat opposed to Russia for the first time. Kazakhstan sees Russia as a declining world power and the <br id="br">
+            former Russian president Dmitry Medvedev recently tweeted that Northern Kazakhstan was next in line for <br id="br">
+            a Russian invasion after Ukraine. For Kazakhstan these are troubling developments that have led to the <br id="br">
+            nation aligning with the West by sanctioning Russia, sending humanitarian aid to Ukraine and stating <br id="br">
+            that they will refuse to recognize the Luhansk and Donetsk ‘self-proclaimed’ regions. This for such a <br id="br">
+            strong Russian ally is a significant act of defiance. The reasoning behind such a move seems motivated <br id="br">
+            purely out of self-interest and a sense of fear. Classical realism assumes that individuals primarily <br id="br">
+            act out of fear or aggression and that this paradigm is then played out through domestic politics. It <br id="br">
+            would be safe to assume that Kazakhstani leaders are fearful that military action will be carried out <br id="br">
+            at their northern border, much like in Georgia and now Ukraine. The recent shift in attitude seems to <br id="br">
+            indicate a feeling that Putin is acting in an increasingly irrational way, likely due to fear of the <br id="br">
+            West, thus stoking up additional fear in the Kazakhstani leadership. The unprovoked invasion of Ukraine <br id="br">
+            now calls into question the extent to which aligning oneself to Russia is beneficial for leadership <br id="br">
+            survival on the individual level. Kazakhstan has furthermore utilized a situation where Russia is <br id="br">
+            increasingly weak, to misalign itself. The leadership knows that Russia is highly unlikely to invade <br id="br">
+            Kazakhstan at this moment in time, as it would mean that they would be fighting on two fronts thousands <br id="br">
+            of kilometers’ apart. Thus, due to the issues Russia is currently facing from the invasion of Ukraine, <br id="br">
+            Kazakhstan has been able to not only distance itself but also actively challenge its once greatest ally.
+        </p>
+        <p id="article">
+            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Belarus</u></b></h2>
+            Belarus on the other hand has had a drastically different approach, aligning itself even closer to Russia <br id="br">
+            and letting Russia station troops in the nation to then invade Ukraine. Belarus is a mid sized Eastern <br id="br">
+            European nation home to around 9 million people. It similarly gained independence from the USSR in 1991 <br id="br">
+            and since 1994, has been governed by the Kremlin aligned Alexander Lukashenko, who recently began his <br id="br">
+            sixth term as president. Belarus is widely considered Russia’s greatest ally, siding with the nation <br id="br">
+            through thick and thin. Belarus has been sanctioned heavily alongside Russia after the invasion of Ukraine, <br id="br">
+            causing it to only align itself even further. For Belarus, their expression of classical realism is very <br id="br">
+            much the same as Kazakhstan but leads to different outcomes between the two nations. Classical realism’s <br id="br">
+            focus on domestic politics and human nature is highly important for a nation who has had a single <br id="br">
+            autocratic leader for all of its history. Lukashenko has built his political career around Soviet <br id="br">
+            nostalgia, gets significant support from Putin in his election campaigns, and Belarus as a nation is <br id="br">
+            highly dependent on trade and energy with Russia. For Lukashenko’s political survival, there is only one <br id="br">
+            state that would allow autocracy in Europe and that is Russia. Lukashenko knows that if he wants to <br id="br">
+            continue his political career and not be poisoned in the process, it is in his interest and because he <br id="br">
+            represents Belarus as a whole, in its interest, to remain as aligned with Russia as possible. Furthermore, <br id="br">
+            Belarus is on the border of Ukraine and already has Russian troops stationed within its territory, <br id="br">
+            thus any provocation on the part of Belarus makes a Russian invasion against the nation far easier than <br id="br">
+            a campaign against Kazakhstan, despite what Medvedev says. Since the invasion of Ukraine, Belarus has <br id="br">
+            deepened its ties even further, recently signing an agreement to allow Russian nuclear weapons to be <br id="br">
+            stationed in its territory. Similarly to Kazakhstan, these actions on the part of Belarus seem to be <br id="br">
+            driven by fear, but unlike Kazakhstan this fear has led to even closer cooperation between Russia and <br id="br">
+            Belarus. A key event in the international system i.e. the Russian invasion of Ukraine can lead to similar <br id="br">
+            reactions in terms of fear between two Russian allies in Belarus and Kazakhstan and yet two polar <br id="br">
+            opposite foreign policy responses. The Russian invasion of Ukraine has had significant implications for <br id="br">
+            Belarus as a neighbor of both nations, creating a situation where either further Russian support or <br id="br">
+            Russian defiance were potential options. Belarus opted for the former and has gone so far as to essentially <br id="br">
+            surrender its territorial sovereignty to Russia, allowing it to station troops and nuclear missiles <br id="br">
+            in the nation.
+        </p>
+        <p id="article">
+            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>In Sum</u></b></h2>
+            Following the Russian invasion of Ukraine, the post-Soviet space has diverged markedly in highly interesting <br id="br">
+            ways. Once Russia’s second greatest ally, Kazakhstan has decided to distance itself with its northern <br id="br">
+            neighbour potentially realizing that the centre of power in Asia now lies in the hands of China. Belarus <br id="br">
+            on the other hand decided that its best approach was further Russian alignment, most probably for reasons <br id="br">
+            relating to Lukashenko’s political survival. Which strategy will play out the best? I will leave that to <br id="br">
+            the fate of history.
+        </p>
+    </div>
+    <div class="footer">
+        <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
+            <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
+            <button id="subscribe" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link'">Subscribe</button>
+            <button id="donate" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L'">Donate</button>
+            <button id="constitution" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='Con.html'">Constitution</button><br>
+        <a href="https://twitter.com/KingsContrarian" class="fa-brands fa-x-twitter" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+        <a href="https://www.instagram.com/thekingscontrarian/" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+      </div>
+    
+    
+    </body>
+    </html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/366dffd563.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="/Users/nathanaelkennedy-leroi/Downloads/The%20King's%20Contarian%20Code/Images/KC5.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>The King's Contrarian</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+}
+
+.fa-instagram {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-x-twitter {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-linkedin {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar i {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  float: none;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  transform: translate(-10%, -0%);
+  font-family: courier new;
+}
+
+.main {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.main img {
+    width: 55%; height: auto;
+}
+
+#article {
+    font-family: century schoolbook;
+}
+
+#author {
+    font-family: century schoolbook;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid black;
+  }
+
+
+@media (max-width: 650px) {
+    .navbar i {
+        width: 100%;
+    }
+}
+
+@media (max-width: 412px) {
+    .main {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .main img {
+        width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    br{
+       display: none;
+    }
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+        <h1 onclick="location.href='index.html'" style="font-family:century schoolbook; cursor: pointer; z-index: 1;">The King's Contrarian<small>Est. 2023</small></h1>
+        <h2 id="current_date"></h2>
+        <style>
+            h2 {
+                font-size: small;
+                font-family: century schoolbook;
+            }
+
+            small {
+                font-size: small;
+            }
+
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+        </style>
+        <script>
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const d = new Date();
+            let day = weekday[d.getDay()];
+            const n = new Date();
+            let day_month = n.getDate();
+            document.getElementById("current_date").innerHTML = day + "," + day_month;
+            const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const m = new Date();
+            let name = month[m.getMonth()];
+            const y = new Date();
+            let year = y.getFullYear();
+            document.getElementById("current_date").innerHTML = day + "," + " " + day_month + " " + name + "," + " " + year;
+        </script>
+        <hr>
+    </div>
+    <div class="container" class="btn btn-primary btn-sm">
+        <style>
+            .container {
+                text-align: center;
+                font-size: small;
+                font-family: century schoolbook;
+                position: relative;
+            }
+        </style>
+        <button onclick="location.href='RealAbout.html'" class="btn btn-outline-dark btn-sm" id="#About">About</button>
+        <button onclick="location.href='BR.html'" class="btn btn-outline-dark btn-sm" id="#BookReviews">Reviews & Recommendations</button>
+        <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
+        <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
+        <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
+    </div>
+    <hr>
+    <div class="navbar">
+        <i>Western Politics | Share:<a class="fa fa-x-twitter"></a><a style="padding-left: 5px;" class="fa fa-instagram"></a><a style="padding-left: 5px;" class="fa fa-linkedin"></a></i>
+      </div>
+      <div class="main">
+        <p>
+            <b style="font-family: century schoolbook;"><u>The Christian case for a British style monarchy</u></b>
+        </p>
+        <img src="https://assets.vogue.com/photos/6216b2258729a2758e0b562a/3:2/w_3498,h_2332,c_limit/1175944922" alt="Default Image">
+        <p style="font-family: century schoolbook; font-size: small;">
+        <b>Late Queen Elizabeth II walking with King Charles III</b>
+        </p>
+        <p id="author">
+            <b>By: Henri Rossano | Durham University</b>
+        </p>
+        <p id="article">
+            A few weeks ago, we commemorated one year since the death of Queen Elizabeth II and King Charles III’s <br id="br">
+            accession to the throne. This commemoration was juxtaposed with the release of a <a href="https://www.bbc.co.uk/news/uk-66707923">YouGov opinion poll</a>, <br id="br">
+            which showed that, among 18 to 24-year-olds, only 30% say that monarchy is “good for Britain”, compared <br id="br">
+            with 77% among over 65s. Although young people often change their opinions over time, this sharp <br id="br">
+            generational divide should ring, if not the death knell of British monarchy, then at least alarms bells <br id="br">
+            among its defenders. 
+        </p>
+        <p id="article">
+            Christians and religious people generally should see this as a potential threat, as republics do not have <br id="br">
+            a good track record when it comes to being friendly to religious practice. But, to give the devil his due, <br id="br">
+            perhaps a certain scepticism towards monarchy is warranted. After all, monarchs throughout history have not <br id="br">
+            always been of the same ilk as that of our late queen or even of our current king. As a Telegraph article put <br id="br">
+            it, the role has been filled by “two foreigners, a rake and a madman”. Some monarchs, who claimed to have <br id="br">
+            acceded to the throne by divine appointment, have turned out to be tyrannical towards their subjects, a <br id="br">
+            seemingly incompatible combination. What’s more, kings and queens in Christendom often accorded themselves <br id="br">
+            powerful positions within the Church and posed as strong defenders of faith, all the while engaging in bitter <br id="br">
+            and divisive conflicts with the Church. For instance, Philip IV, who as French king used the legitimist title <br id="br">
+            of Rex Christianissimus, fought with Pope Boniface VIII over the right to appoint bishops, among other things, <br id="br">
+            and ended up sending armed troops to depose him. 
+        </p>
+        <p id="article">
+            The conflict between monarchs’ behaviour and their stated Christianity puts into question the practice of <br id="br">
+            raising them to such heights. Is it God’s intention that human societies should organise themselves in such <br id="br">
+            a way? After all, did God not express to the Prophet Samuel His disappointment with the people of Israel’s <br id="br">
+            decision to replace Him with a king? And yet, it is my firm belief that informed reason and moral sense point<br id="br">
+            towards monarchy, more specifically British-style monarchy, as the most legitimate form of political system. <br id="br">
+            Although the Christian pre-suppositions involved in this approach may seem narrow-minded, they offer an insight<br id="br">
+            into the deep and indispensable meaning implied in monarchy, and are thus accessible for all. 
+        </p>
+        <p id="article">
+            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>The need for hierarchy</u></b></h2>
+            To a certain extent, monarchic structures come naturally to human societies. This is partly inscribed in human <br id="br">
+            biology, with extensive research demonstrating our biological ancestors’ proclivity for hierarchical organisation. <br id="br">
+            But this is also borne out historically, where most early societies - meaning generally societies from <br id="br">
+            pre-civilisational tribal units, through to the Sumerians and the establishment of the first civilisations, <br id="br">
+            up to approximately the fourth century B.C. - coalesced around single leaders. Even the Greek and Roman republics <br id="br">
+            that followed had the tendency to revert to a system where one man controlled the reins of power, often with <br id="br">
+            populist and dictatorial (in the modern sense of the word) characteristics, such as Pericles and Caesar. There <br id="br">
+            are of course exceptions and nuances to this broad-brush overview of human history, but by and large it remains <br id="br">
+            true that less complex and developed societies, that is to say societies that are closer to a ‘state of nature’,<br id="br">
+            structure themselves along single-headed hierarchical lines. This makes sense if one is to consider the fact <br id="br">
+            that societies in the past faced many more existential crises, much more often than modern societies do. Beyond <br id="br">
+            the need for someone to fill executive functions and to have a unified foreign policy, it was also a necessity <br id="br">
+            to have a quick and absolute response to war or plague.
+        </p>
+        <p id="article">
+            British society today, and economically developed societies more generally, hardly face the same level of existential <br id="br">
+            threats. And yet, Britain has kept its old monarchical system. In fact, it is the only Western country not to have <br id="br">
+            changed its constitution in the last three hundred or so years (effectively since Cromwell’s Protectorate in the <br id="br">
+            1650s). And while some countries were founded on a rejection of such a system, their constitutions came to emulate <br id="br">
+            that same monarchical structure: for instance, the US was founded on the back of a revolution against the tyranny <br id="br">
+            of the British monarchy, yet the office of President was made to look like that of the king – in fact, Alexander <br id="br">
+            Hamilton advocated for the creation of an English-style monarchy, and George Washington could have delivered on <br id="br">
+            that intention as President if he hadn’t given up the office after two terms. Moreover, political rituals in <br id="br">
+            countries, which have shed their monarchies, often, still contain the same pomp and circumstance that would <br id="br">
+            characterise a traditional monarchy. All this is not said to disparage these countries that no longer have kings <br id="br">
+            or queens, or to expose them as hypocrites. It is instead an observation of the reality of the world as God created <br id="br">
+            it, whereby societies need a symbolic entity at the top, lest they crumble to the ground. 
+        </p>
+        <p id="article">
+            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Hierarchy of values</u></b></h2>
+            The first reason for this is that a country needs a hierarchy of values. Like individuals, collectives must <br id="br">
+            judge and measure choices and decisions according to the principles which they have set out as worthy of <br id="br">
+            aspiration. These principles may evolve over time, and individuals may disagree with them, but they form the <br id="br">
+            fundamentals of what unifies the collective and what keeps it stable, thereby ensuring the ‘psychological health’, <br id="br">
+            of the group. But for a hierarchy of values to exist psychologically or symbolically, it must at least partly exist <br id="br">
+            in the society, such that improvement in the social hierarchy may be realised by adherence to these societal <br id="br">
+            values. Take hard work for example, a value that characterises many societies. For it to be recognised as valuable, <br id="br">
+            it must be emulated and embodied within the actual social hierarchy, such that hard-working behaviour is conducive <br id="br">
+            to an improvement in societal status. This will never be perfectly the case, there will always be unfairness and <br id="br">
+            cheating, but fundamentally, a society relies on the existence of a hierarchy indicating that there is something <br id="br">
+            of value worth striving for. Flatten out the hierarchy, as many egalitarians have tried to do, and you eliminate <br id="br">
+            that distinction between what is good and encouraged by the society and what is not, because no behaviour leads to <br id="br">
+            advancement in the real world. It is effectively declaring that there is nothing of value, except equality, which <br id="br">
+            necessitates the individual’s potential and initiative to be stymied. 
+        </p>
+        <p id="article">
+            Societies generally seem to have grasped the value of hierarchy, not least of them Britain. Its principles, values <br id="br">
+            and ideals, developed over many centuries, are enshrined at the top, represented by the monarch. Many of the ideas <br id="br">
+            which emerged out of the British tradition are now seen as universal: ideas of freedom, rights, and equality before <br id="br">
+            the law, which are now proclaimed as human rights by institutions like the UN are in truth derived in great part <br id="br">
+            from the Christian tradition, as it was formed in the conflicts, debates and practices that characterised British <br id="br">
+            history. In fact, as early as 1470, Sir John Fortescue was writing about the rights and privileges of Englishmen <br id="br">
+            in his Commendation of the Laws of England, commenting on how even the king could not trespass on someone’s property <br id="br">
+            without their permission. These values, along with others that are more unique to Britain, are all kept alive by <br id="br">
+            the fact that they are grounded in custom and tradition, both of which are represented by that constant presence <br id="br">
+            at the top of the hierarchy. It is key to Britain that there be two heads of state: one that changes according to <br id="br">
+            the public whims or the common zeitgeist, and another that remains above that, representing the timeless values <br id="br">
+            that characterise our country, and it is important that the two should not be confused. 
+        </p>
+        <p id="article">
+            This does not mean that these values are created at the top. As Christians, we believe that God is the source of all <br id="br">
+            that is good and true, and that He is the ultimate point towards which all good hierarchies point: He is the ‘King of Kings’.<br id="br">
+             This concept is well represented by the symbol of the great pyramid, as found on the back of the US dollar bill. <br id="br">
+             The idea is that the entity at the top is simultaneously an embodiment of all that the hierarchy aspires to and is <br id="br">
+             separate from the hierarchy. In this way, we do not believe that the monarch is God, but that he or she is at the <br id="br">
+             top of the social structure, while still subject to God and equal to all in the eyes of God, who is above all. <br id="br">
+             Symbolically, this is what the cross on the top of monarchs’ crown is meant to be a reminder of: that the monarch <br id="br">
+             has God’s blessing or that God’s hand lays on their head, like the Jewish yarmulke, but also that God is above them.<br id="br">
+            Moreover, part of the monarch’s role is to stand as a pointer towards God, both by virtue of his or her character <br id="br">
+            and by virtue of the nature of his or her office. 
+          
+        </p>
+        <p id="article">
+            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Monarchy and implied meaning</u></b></h2>
+            Small ‘r’ republicans would debate the need for a monarch to fill those functions, arguing instead for a more fluid <br id="br">
+            and fair hierarchy with a deserving entity at the top. After all, shouldn’t the people at the top earn their way <br id="br">
+            there? This is a fair and understandable point, which aims at letting the most competent people achieve higher status. <br id="br">
+            I would also be remiss if I didn’t say that republics can function very well and have been a good medium for spreading <br id="br">
+            freedom and equality throughout the world. In fact, since the foundation of the United States, republics have been <br id="br">
+            the standard that all new states aspire to, such that even regimes like the USSR and North Korea call themselves <br id="br">
+            republics to legitimise themselves. Nor am I advocating for republics to revert to monarchy; I think that if it <br id="br">
+            not undergirded by history and tradition, a monarchy would not last long. But I think that monarchy fits in better <br id="br">
+            with a Christian view of the world, for a couple of reasons. 
+        </p>
+        <p id="article">
+            To begin, human beings need to be reminded that they do not create everything. The central idea of a republic is <br id="br">
+            that the people have raised an individual to the heights of power by their own will and strength, and accordingly <br id="br">
+            may tear him down if they so desire. This is consubstantial with the idea that any legitimate authority must spring <br id="br">
+            from below, from the people, and may never be ordained by something higher. The problem with this is firstly that it <br id="br">
+            is a recipe for instability, since the people can easily claim that they are not satisfied with the system that they <br id="br">
+            have inherited and thus it loses all legitimacy in their eyes. One must only look at the writings of republicans like <br id="br">
+            Thomas Jefferson to see this manifest: for instance, he writes that the constitution should be completely revised, <br id="br">
+            tabula rasa, at every generational milestone, meaning every twenty years or so, so that the people aren’t ruled by <br id="br">
+            the ideas of their ancestors. To say that any legitimate authority must come from the people is tantamount to saying <br id="br">
+            that anything that gets in the way of the people is illegitimate and must be destroyed – it is no wonder that republics <br id="br">
+            often appear on the back of bloody revolutions. Another problem is that the idea of the general will is often difficult <br id="br">
+            to define, and can often turn into either the tyranny of an individual who claims to embody the general will, or the <br id="br">
+            tyranny of the majority.
+        </p>
+        <p id="article">
+            But on a more profound level, this vision poses a problem to a Christian way of life because it is fundamentally a <br id="br">
+            prideful attitude. Indeed, the idea that we create our own systems ourselves, that there is no framework that is inherited <br id="br">
+            from God or from our ancestors who were God-believers, can quickly translate into the Nietzschean idea that we can create <br id="br">
+            our own values. This, after all, is the central idea of the story of the tower of Babel: humans want to reach the <br id="br">
+            heavens – a utopian aspiration – and to do so must build their own ethical framework. But as they try to reshape moral <br id="br">
+            reality, actual reality, portrayed as God because He is its creator, comes to foil their plans. A more humble attitude <br id="br">
+            is to see the world as a prolonged covenant between God and His people passed on from one generation to the next. This <br id="br">
+            idea underlies Burke’s conception of society: for him, society is a contract between past, present and future generations, <br id="br">
+            whereby we inherit certain systems, and we must try to preserve what is good within them so that we may pass them on to <br id="br">
+            the next generation. God is central to this view because He is meant to be the guiding hand as society progresses and <br id="br">
+            develops, such that it may be gradually shaped by His Divine Law. In this way, human beings do have natural rights <br id="br">
+            bestowed unto them by God and thus preceding society, but these natural rights cannot be understood by pure reason, <br id="br">
+            having instead to be discovered through human custom conforming to divine intent. Having a monarchy like Britain’s, <br id="br">
+            sustains that continuity which binds one generation to the next and represents the timeless values, which call society <br id="br">
+            towards perfection, towards God. In this way, that there are certain things which are beyond our control and that are <br id="br">
+            greater than us is a reminder of the humility with which we should approach the world as we understand it, and it <br id="br">
+            grounds us in reality because it establishes a basic value system inherited from people who were themselves grounded <br id="br">
+            in reality, which should consequently not be recklessly tampered with. 
+        </p>
+        <p id="article">
+            Finally, monarchy by nature tends towards the religious because it is a reminder of the immaterial realm of meaning <br id="br">
+            that undergirds and brings life to the physical world. Indeed, the idea that an individual can embody the nation is a <br id="br">
+            rebuke to the rationalistic view that matter is the only valid level of analysis through which to understand the world. <br id="br">
+            When atheist thinkers try to apply the same logic and method as the material world requires to religion, arguing that <br id="br">
+            the scientific method does not prove God, they often display a misunderstanding of the fundamental religious belief in <br id="br">
+            a spiritual realm, existing in consonance with the physical realm. As religious people, we believe that the self is a <br id="br">
+            physical being, but we believe that this physical embodiment of the self is a reflection, a symbol, of the spiritual idea <br id="br">
+            of the self. To put this in a clearer sense, an action from a scientific standpoint is just an interplay between parts <br id="br">
+            of matter, but we believe that this interplay of matter has some sort of meaning attached to it: the actions of giving <br id="br">
+            bread to a starving child on one side and taking it away from him on the other, may seem the same to a scientific <br id="br">
+            rationalist but we associate different meanings to them – the former represents something good while the latter does <br id="br">
+            not. Thus, we attribute specific meaning to certain physical realities, and it is thereby possible for a physical <br id="br">
+            reality to represent or embody a certain principle. All this is to say that a system of monarchy like Britain’s, <br id="br">
+            understands that political power is not threefold but fourfold: there are those powers that Montesquieu <br id="br">
+            identified - executive, legislative and judicial – but there is also the symbolic, which is often confused with <br id="br">
+            the executive, with often dangerous and divisive consequences. And it is this last form of power that the monarch <br id="br">
+            holds by representing and thus embodying the nation. Through this example we understand that we are not limited to <br id="br">
+            our fleshly existence but we are called to incarnate a metaphysical or immaterial principle like truth, beauty, <br id="br">
+            endurance or gentleness, the same way Christ incarnated the all-encompassing principle which we can only express <br id="br">
+            using words like God, the Logos, Being itself. 
+        </p>
+    </div>
+    <div class="footer">
+        <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
+            <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
+            <button id="subscribe" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link'">Subscribe</button>
+            <button id="donate" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L'">Donate</button>
+            <button id="constitution" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='Con.html'">Constitution</button><br>
+        <a href="https://twitter.com/KingsContrarian" class="fa-brands fa-x-twitter" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+        <a href="https://www.instagram.com/thekingscontrarian/" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+      </div>
+    
+    
+    </body>
+    </html>

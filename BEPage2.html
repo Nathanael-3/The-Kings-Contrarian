@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/366dffd563.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="/Users/nathanaelkennedy-leroi/Downloads/The%20King's%20Contarian%20Code/Images/KC5.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>The King's Contrarian</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+}
+
+.fa-instagram {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-x-twitter {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fa-linkedin {
+    padding: 5px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar i {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  float: none;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  transform: translate(-10%, -0%);
+  font-family: courier new;
+}
+
+.main {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.main img {
+    width: 55%; height: auto;
+}
+
+
+#author {
+    font-family: century schoolbook;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid black;
+  }
+
+
+@media (max-width: 650px) {
+    .navbar i {
+        width: 100%;
+    }
+}
+
+@media (max-width: 412px) {
+    .main {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .main img {
+        width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    br{
+       display: none;
+    }
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header" style="text-align: center;">
+        <h1 onclick="location.href='index.html'" style="font-family:century schoolbook; cursor: pointer; z-index: 1;">The King's Contrarian<small>Est. 2023</small></h1>
+        <h2 id="current_date"></h2>
+        <style>
+            h2 {
+                font-size: small;
+                font-family: century schoolbook;
+            }
+
+            small {
+                font-size: small;
+            }
+
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+        </style>
+        <script>
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const d = new Date();
+            let day = weekday[d.getDay()];
+            const n = new Date();
+            let day_month = n.getDate();
+            document.getElementById("current_date").innerHTML = day + "," + day_month;
+            const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const m = new Date();
+            let name = month[m.getMonth()];
+            const y = new Date();
+            let year = y.getFullYear();
+            document.getElementById("current_date").innerHTML = day + "," + " " + day_month + " " + name + "," + " " + year;
+        </script>
+        <hr>
+    </div>
+    <div class="container" class="btn btn-primary btn-sm">
+        <style>
+            .container {
+                text-align: center;
+                font-size: small;
+                font-family: century schoolbook;
+                position: relative;
+            }
+        </style>
+        <button onclick="location.href='RealAbout.html'" class="btn btn-outline-dark btn-sm" id="#About">About</button>
+        <button onclick="location.href='BR.html'" class="btn btn-outline-dark btn-sm" id="#BookReviews">Reviews & Recommendations</button>
+        <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
+        <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
+        <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
+    </div>
+    <hr>
+    <div class="navbar">
+        <i>Business & The Economy | Share:<a class="fa fa-x-twitter"></a><a style="padding-left: 5px;" class="fa fa-instagram"></a><a style="padding-left: 5px;" class="fa fa-linkedin"></a></i>
+      </div>
+      <div class="main">
+        <p>
+            <b style="font-family: century schoolbook;"><u>It's Time We Privatised The NHS</u></b>
+        </p>
+        <img src="https://static.independent.co.uk/2023/08/10/00/8ae4857227d1c13d81aafdfea7b31f1dY29udGVudHNlYXJjaGFwaSwxNjkxNjc0ODI2-2.72968930.jpg" alt="Default Image">
+        <p style="font-family: century schoolbook; font-size: small;">
+        <b>Hospital reception with nurse walking down a corridor</b>
+        </p>
+        <p id="author">
+            <b>By: Stephen Pina | University of St Andrews</b>
+        </p>
+        <p id="article">
+            With median waiting times at thirteen weeks and increasingly common horror stories of those with serious <br id="br">
+            illnesses having to wait months or even years for treatment, it is evident that the NHS is in need of reform. 
+        </p>
+        <p id="article">
+            This stark reality was on full display during the Covid-19 pandemic, where Britain was forced to lockdown <br id="br">
+            in an attempt to prevent the inevitable overrun of the NHS, causing many to lose their jobs, commit suicide <br id="br">
+            and for the government to spend £70 billion that it didn’t have on a furlough scheme. 
+        </p>
+        <p id="article">
+            Now it is the case that many of the poorest in the UK have to opt for private healthcare, paid for through <br id="br">
+             crowdfunding campaigns, in order to get their necessary treatment in time. Yet the prevailing sentiment remains <br id="br">
+             resistant to large-scale reform, insisting any issue is a result of chronic underfunding or that privatisation <br id="br">
+             will result in millions of Brits losing access to healthcare; neither could be further from the truth. 
+            
+        </p>
+        <p id="article">
+            Firstly, the UK spends around 10% of its GDP on healthcare, roughly equal to the Netherlands and more than Denmark, <br id="br">
+            Australia, Finland, New Zealand, Italy and South Korea (all of which provide their citizens with better health <br id="br">
+            outcomes than the NHS). Only 10 countries in the OECD spend more on their healthcare, and with the exception <br id="br">
+            of the US, all are within 1.5% of the UK. Secondly, the NHS budget has increased by roughly £55 billion since <br id="br">
+            2011, whilst patient outcomes, waiting times and the average length of GP appointments have all got worse, <br id="br">
+            indicating we are getting less quality for more money. 
+        </p>
+        <p id="article">
+            Furthermore, a recent study conducted by The King’s Fund found that there is no evidence of widespread privatisation <br id="br">
+            in the NHS, despite persistent claims to the contrary. Those who insist the NHS is on the path to becoming a <br id="br">
+            US healthcare model are acting in bad faith, by presenting a fallacious argument where the sole privatised <br id="br">
+            health system example is the US, and the NHS is presented as some sort of utopian counter. Yet, whilst the <br id="br">
+            US does not have universal coverage, their health outcomes still outperform the UK and thus the challenge becomes <br id="br">
+            creating a health system that is universal, high quality, and affordable. 
+        </p>
+        <p id="article">
+            The Euro Health Consumer Index ranks Switzerland and the Netherlands as the two best healthcare systems in Europe, <br id="br">
+            with the UK in 16th. Furthermore, when calculating the average OECD rankings of a group of ten nations, <br id="br">
+            (South Korea, Switzerland, Australia, Italy, New Zealand, Finland, the Netherlands, Denmark, the US and the UK) <br id="br">
+            for a range of factors like cancer survival rates, infant mortality, life expectancy, and outcome of cardiovascular <br id="br">
+            disease care, the top three nations are South Korea, Switzerland and Australia, the Netherlands is fifth and the UK <br id="br">
+            finishes dead last. 
+        </p>
+        <p id="article">
+            Switzerland, the Netherlands and South Korea all operate universal, cost-effective and quality healthcare that is <br id="br">
+            primarily privatised, whilst Australia maintains a public-private health system. The Swiss and Dutch systems work <br id="br">
+            through mandatory private insurance for all citizens and for those who cannot afford, subsidised insurance from the <br id="br">
+            government. The government also regulates insurance providers, thus preventing price hikes, discrimination and poor <br id="br">
+            quality control. 
+        </p>
+        <p id="article">
+            This allows for the efficiency, innovation and quality created by the private sector and the universality and <br id="br">
+            affordability guaranteed by some state intervention. A common-sense middle ground is therefore clearly possible, <br id="br">
+            where quality healthcare is provided without the catastrophised scenario of millions of Brits losing access to <br id="br">
+            healthcare.  
+        </p>
+        <p id="article">
+            A further hindrance is the fact that the UK does a terrible job of retaining its top medicine graduates or encouraging <br id="br"> 
+            its own population to go into medicine, as most either opt to go overseas for more lucrative salaries upon graduation <br id="br">
+            or decide to study a subject with more lucrative job prospects. In fact, whilst in the Netherlands only about 3% of <br id="br">
+            doctors are from overseas; in the UK that figure is almost 30% to meet the domestic shortage.
+        </p>
+        <p id="article">
+            By privatising the healthcare sector, the UK can benefit from better doctors and more doctors, decreasing waiting <br id="br">
+            times and increasing health outcomes. As the NHS continues to lag behind its OECD peers, the case for its privatisation <br id="br">
+             has never been stronger. 
+        </p>    
+    </div>
+    <div class="footer">
+        <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
+            <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
+            <button id="subscribe" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOTibogAHCVvhtb0G4vQRlpCQTGMrz41Gv5Jpyjdf7zchs4A/viewform?usp=sf_link'">Subscribe</button>
+            <button id="donate" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=WQ3DA4YBYSW4L'">Donate</button>
+            <button id="constitution" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='Con.html'">Constitution</button><br>
+        <a href="https://twitter.com/KingsContrarian" class="fa-brands fa-x-twitter" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+        <a href="https://www.instagram.com/thekingscontrarian/" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 25px; height: 25px; text-align: center; text-decoration: none; color: black;"></a>
+      </div>
+    
+    
+    </body>
+    </html>
