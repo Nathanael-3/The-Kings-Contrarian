@@ -304,14 +304,16 @@
             <button onclick="location.href='BE.html'" class="btn btn-outline-dark btn-sm" id="#Business">Business & The Economy</button>
             <button onclick="location.href='WP.html'" class="btn btn-outline-dark btn-sm" id="#Politics">Western Politics</button>
             <button onclick="location.href='WE.html'" class="btn btn-outline-dark btn-sm" id="#WorldEvents">World Events</button>
-                <a type="button" style="display: none;" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" class="fa fa-magnifying-glass" onclick="myFunction()"></a>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" class="fa fa-magnifying-glass" onclick="myFunction()"></a>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <div class="dropdown">
-                                <input id="myInput" type="search" id="form1" class="form-control" placeholder="Search..." onkeyup="filterFunction()">
-                                <div id="myDropdown" class="dropdown-content">
+                            <form>
+                                <input type="text" class="form-control" id="searchbar" placeholder="Search..." oninput="filterFunction()">
+                            </form>
+                            <div class="dropdown"> 
+                                <div class="dropdown-content" id="Dropdown">
                                     <a href="#first" onclick="location.href='BEPage.html'"><b>Are East And West At An Impasse? A Story Told Through The Chinese Semiconductor Industry</b></a>
                                     <a href="#second" onclick="location.href='BEPage2.html'"><b>It's Time We Privatised The NHS</b></a>
                                     <a href="#third" onclick="location.href='WPPage.html'"><b>The Star-Spangled Banner Should Remain Waving, Full Mast, O’er The Land Of The Free And The Home Of The Brave</b></a>
@@ -324,11 +326,18 @@
                                     <a href="#tenth" onclick="location.href='WPPage5.html'"><b>Do You Feel Represented? A Case For British Localism </b></a>
                                     <a href="#eleventh" onclick="location.href='BRPage.html'"><b>The Ultimate Pursuit of Knowledge: Mathematics, Philosophy, and History </b></a>
                                     <a href="#twelth" onclick="location.href='WPPage6.html'"><b>What Are We To Make Of The News Of High Schools Withholding Notifications Of National Merit Awards? </b></a>
+                                </div>
+                            </div>
                                     <style>
                                         .dropdown {
                                             position: relative;
                                             display: inline-block;
                                         }
+
+                                        #Dropdown {
+                                            display: none;
+                                        }
+                                        
                                         .dropdown-content a {
                                             color: black;
                                             padding: 12px 16px;
@@ -343,26 +352,27 @@
                                     <script>
 
                                         function myFunction() {
-                                            document.getElementById("myDropdown").style.display = 'none';
+                                            document.getElementById("Dropdown").style.display = 'none';
                                             }
 
-
-
                                         function filterFunction() {
-                                            document.getElementById('myDropdown').style.display = 'initial';
+                                            const searchBar = document.getElementById('searchbar');
+                                            const dropdown = document.getElementById('Dropdown');
+                                            document.getElementById('Dropdown').style.display = 'initial';
                                             var input, filter, ul, li, a, i;
-                                            input = document.getElementById("myInput");
+                                            input = document.getElementById("searchbar");
                                             filter = input.value.toUpperCase();
-                                            div = document.getElementById("myDropdown");
+                                            div = document.getElementById("Dropdown");
                                             a = div.getElementsByTagName("a");
                                             for (i = 0; i < a.length; i++) {
                                                 txtValue = a[i].textContent || a[i].innerText;
-                                                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                            if (searchBar.value === '') {
+                                                dropdown.style.display = 'none';
+                                            } else if (txtValue.toUpperCase().indexOf(filter) > -1) {
                                                     a[i].style.display = "";
-                                                } else {
-                                                    a[i].style.display = "none";
-
-                                                }
+                                            } else {
+                                                a[i].style.display = "none";
+                                            }
                                             }
                                         }
                                     </script>
