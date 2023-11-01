@@ -51,6 +51,10 @@ body {
     color: black;
 }
 
+#br {
+    display: none;
+}
+
 .navbar i {
   color: black;
   padding: 14px 20px;
@@ -71,11 +75,29 @@ body {
 
 .main img {
     width: 55%; height: auto;
+    text-align: center;
 }
 
+.article {
+    font-family: century schoolbook;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    width: 50%;
+}
+
+#underphoto {
+    font-family: century schoolbook; font-size: 10px;
+}
 
 #author {
     font-family: century schoolbook;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -97,9 +119,33 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .article {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .article {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
     .main img {
         width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    #underphoto {
+        font-size: 9px;
     }
 }
 
@@ -172,32 +218,33 @@ body {
             <b style="font-family: century schoolbook;"><u>Are East And West At An Impasse? A Story Told Through The Chinese Semiconductor Industry</u></b>
         </p>
         <img src="https://internationalbanker.com/wp-content/uploads/2023/04/China-Chips.png" alt="Default Image">
-        <p style="font-family: century schoolbook; font-size: small;">
+        <p id="underphoto">
         <b>Circuit board with a Chinese flag superimposed</b>
         </p>
         <p id="author">
-            <b>By: Mohammad Omar Farooq Ahsan | The University of Manchester</b>
+            <b>By: Mohammad Omar Farooq Ahsan | The University of Manchester | 28/10/2023</b>
         </p>
-        <p id="article" style="font-family: century schoolbook;">
-        <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Huawei’s Technological leap with the Mate 60 Pro</u></b></h2>
+        <div class="article">
+        <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>Huawei’s Technological leap with the Mate 60 Pro</u></b></h2>
+        <p>
         Huawei, a leading mobile phone brand from China, recently showcased its advanced Mate 60 Pro. The global tech <br id="br">
         community was taken aback to discover that this device is driven by a 7-nanometre (nm) processor. This revelation <br id="br">
         has ignited discussions about the true current impact of U.S. sanctions on Chinese advanced semiconductor technology <br id="br">
         and how effectively Beijing has managed to navigate around these restrictions. <br id="br">
         </p>
-        <p id="article">
+        <p>
             The 7nm chip, which powers the Mate 60 Pro, is the brainchild of the Shanghai-based Semiconductor <br id="br">
             Manufacturing International Corp (SMIC). This achievement is a testament to China's evolving prowess <br id="br">
             in the semiconductor domain. Before this innovation, the prevailing assumption, especially considering <br id="br">
             the Western sanctions, was that China's technological ceiling was capped at producing 14nm chips. <br id="br">
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Understanding the significance of Nanometre Node</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>Understanding the significance of Nanometre Node</u></b></h2>
+        <p>
             In the realm of chip manufacturing, the term 'nanometre node' is pivotal. It essentially denotes the <br id="br">
             generation or the technological advancement of the chip. A smaller nm number signifies a more advanced <br id="br">
             and efficient chip.
         </p>
-        <p id="article">
+        <p>
             For a historical perspective, chips designed at the 14nm specification made their debut in smartphones <br id="br">
             around the mid-2010s. By today's standards, these chips are lagging by two to three generations. Drawing <br id="br">
             a comparison, a basic model like the Samsung A20 operates on a 14nm chipset. Currently, the pinnacle of <br id="br">
@@ -207,13 +254,13 @@ body {
             and common household gadgets. Smaller Nanometre chips are required for sophisticated technologies, <br id="br">
             predominantly in AI and 5G.
         </p>
-        <p id="article">
+        <p>
             SMIC was only able to mass-produce 14nm chips up until 2022, which, when juxtaposed with global semiconductor <br id="br">
             giants Advanced Micro Devices Inc. (AMD) and Taiwan Semiconductor Manufacturing Company (TSMC), who were <br id="br">
             producing 7nm chips in 2017, is rather poor. This rapid progression by Huawei and SMIC underscores China's <br id="br">
             accelerated efforts to bridge the technological divide.
         </p>
-        <p id="article">
+        <p>
             Dr. Mark Liu, Chairman of TSMC, highlighted the 7nm process as a significant leap and a defining moment in <br id="br">
             semiconductor production for the Chinese. The primary distinction between the 7nm and 14nm processes lies <br id="br">
             in the substantial increase in the number of transistors per unit area for the 7nm process, coupled with a <br id="br">
@@ -224,13 +271,13 @@ body {
             witnessed a twenty-fold performance enhancement. This optimization meant that a data centre, which previously <br id="br">
             necessitated 25 storage racks, could be condensed to just one.
         </p>
-        <p id="article">
+        <p>
             To summarise, 7nm chips offer dual advantages: they reduce ownership costs while simultaneously boosting <br id="br">
             computational capabilities. This makes them a financially sound choice for applications in AI, cloud <br id="br">
             computing, and 5G, spanning both commercial and defence sectors.
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Reassessing the Impact of U.S. Sanctions</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>Reassessing the Impact of U.S. Sanctions</u></b></h2>
+        <p>
             While Huawei's advancements are undeniably commendable, it's essential to evaluate the broader picture. <br id="br">
             The U.S. sanctions, aimed at curbing China's tech growth, have left tangible dents. Huawei's financials <br id="br">
             bear testimony to this. In 2022, their revenue clocked 642 billion yuan (equivalent to US$87.4 billion). <br id="br">
@@ -239,34 +286,34 @@ body {
             7nm chip is a product of extant technology, their journey towards the next big innovation might be riddled <br id="br">
             with challenges, especially without unhindered access to cutting-edge chipmaking technology.
         </p>
-        <p id="article">
+        <p>
             While profits have taken a hit, does it necessarily matter to a company that, in essence, has unlimited <br id="br">
             financial and political backing from the CCP, due to its importance for national security and potential <br id="br">
             political implications through being a world leader in technological advancement? 
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>China's Pursuit of Semiconductor Autonomy</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>China's Pursuit of Semiconductor Autonomy</u></b></h2>
+         <p>
             China's domestic chip production remains limited despite being a significant consumer of the aforementioned. <br id="br">
             In 2021, the nation's semiconductor market was valued at approximately $186.5 billion. However, only chips <br id="br">
             worth $31.2 billion were produced domestically, resulting in a self-sufficiency rate of 16.7%. Notably, <br id="br">
             chips produced by China-based companies constituted just 6.6% of the domestic consumption, valued at <br id="br">
             $12.3 billion.
         </p>
-        <p id="article">
+        <p>
             The "Made in China 2025" strategy aims for a 75% self-sufficiency rate by 2030. Given this target, China's <br id="br">
             substantial subsidies and policy incentives for semiconductor companies are understandable. Despite some <br id="br">
             notable failures in semiconductor development, China remains steadfast in its commitment to bolstering its <br id="br">
             semiconductor industry.
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Limited Progress</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>Limited Progress</u></b></h2>
+        <p>
             Previously, SMIC's most advanced known chip was the 14nm, as Washington's restrictions in late 2020 prevented  <br id="br">
             it from acquiring an EUV (used to print the tiny features that make up a microchip) machine from the Dutch  <br id="br">
             company, ASML. However, according to TechInsights, it seems SMIC might have achieved the production of 7nm chips  <br id="br">
             by adapting the more basic DUV (same as EUV but less powerful), which they could still acquire from ASML without  <br id="br">
             restrictions.
         </p>
-        <p id="article">
+        <p>
             Regardless of the chip's manufacturer, Tilly Zhang, an analyst at Gavekal Dragonomics, minimized the achievement. <br id="br">
             She pointed to a low yield rate, which decreases the number of functional chips extracted from each wafer, <br id="br">
             thereby increasing costs. Additionally, new export controls from the Netherlands will further restrict SMIC's <br id="br">
@@ -274,7 +321,7 @@ body {
             phones with these chips at standard market prices is due to its vast financial resources combined with substantial <br id="br">
             government subsidies."
         </p>
-        <p id="article">
+        <p>
             Recent reports from Reuters indicate that China plans to introduce a new state-supported investment fund targeting <br id="br"> 
             approximately $40 billion for its semiconductor sector, intensifying its efforts to level with the U.S. and other <br id="br">
             competitors. These subsidies are of the utmost importance as the Chinese chip industry depends on them for their <br id="br">
@@ -283,47 +330,47 @@ body {
             Copenhagen Business School, remarked "The U.S. restrictions have significantly increased the costs of producing <br id="br">
             controlled technologies in China," suggesting that the Chinese government is likely bearing these expenses. <br id="br">
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>The Complex Web of the Tech Ecosystem</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>The Complex Web of the Tech Ecosystem</u></b></h2>
+         <p>
             The semiconductor landscape isn't just about individual companies or nations; it's a complex web of collaborations, <br id="br">
             partnerships, and shared innovations. The U.S. CHIPS and Science Act of 2022 adds another layer of complexity. <br id="br">
             This act essentially bars beneficiaries of a massive US$52.7 billion incentive program from entering any form <br id="br">
             of collaborative research or tech licensing with Chinese entities, especially if it pertains to high-tech <br id="br">
             semiconductors.
         </p>
-        <p id="article">
+        <p>
             This poses significant challenges, especially considering the intricate nature of the semiconductor industry. <br id="br">
             A case in point is the outsourced assembly, testing, and packaging (OSAT) process. Samsung offers a vivid analogy,<br id="br"> 
             likening the semiconductor to the human brain, with its packaging representing the intricate nervous system and <br id="br">
             skeletal structure. The final phase, known as the package test, is a rigorous quality check ensuring the chip's <br id="br">
             optimal performance.
         </p>
-        <p id="article">
+        <p>
             Collaborating with Chinese firms in this intricate domain could potentially jeopardize a company's future <br id="br">
             collaborations and access to U.S. technological innovations. Moreover, the U.S.'s deficiency in domestic <br id="br">
             OSAT capabilities might introduce unforeseen security vulnerabilities. Hence Samsung has limited and, in <br id="br">
             some cases, stopped selling advanced chip equipment to their Chinese counterparts to avoid the ire of the <br id="br">
             Americans.
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>China’s Counter strategy: Techno-Nationalism</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>China’s Counter strategy: Techno-Nationalism</u></b></h2>
+        <p>
             China, fully aware of the U.S.'s aggressive tech-driven strategies, has adopted a robust counterstrategy.  <br id="br">
             They are rallying their entire societal fabric against what they perceive as foreign adversaries aiming  <br id="br">
             to stifle their growth. This sentiment was echoed by China's Ministry of State Security, which recently  <br id="br">
             issued warnings against potential espionage threats and urged collective vigilance.
         </p>
-        <p id="article">
+        <p>
             This narrative extends seamlessly into the tech domain. The underlying message is clear: Western powers <br id="br">
             are attempting to suppress China's technological ascent, and it's the patriotic duty of every Chinese <br id="br">
             citizen to thwart these efforts.
         </p>
-        <p id="article">
+        <p>
             In line with this, a Reuters report highlighted China's rejuvenated efforts under its Thousand Talents Plan. <br id="br">
             This initiative aims to attract global tech experts, offering them lucrative incentives, all in a bid to <br id="br">
             bolster China's tech capabilities and navigate the maze of U.S. restrictions.
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Strategic Implications for the Semiconductor Industry</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>Strategic Implications for the Semiconductor Industry</u></b></h2>
+        <p>
             Historical trends in China's electronics sector have informed policymakers that, despite current technological <br id="br">
             and production scale gaps with international counterparts, there are strategic advantages to supporting domestic <br id="br">
             semiconductor companies. Firstly, a surge in Chinese manufacturers can potentially saturate the market, <br id="br">
@@ -332,56 +379,56 @@ body {
             While these new factories will primarily focus on established process nodes, this strategy could pressure other <br id="br">
             manufacturers specializing in these processes.
         </p>
-        <p id="article">
+        <p>
             Secondly, if select Chinese companies excel amidst the policy-supported foundries, they could potentially  <br id="br">
             challenge or even lead the advanced process market. This model has been successful in sectors like PC/laptop  <br id="br">
             manufacturing with Lenovo and telecommunications with Huawei and ZTE. SMIC, with its advancements in the 7nm  <br id="br">
             process, exemplifies a Chinese firm poised to challenge international semiconductor leaders and potentially  <br id="br">
             bypass U.S. technological constraints.
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>China's Technological Aspirations and Implications</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>China's Technological Aspirations and Implications</u></b></h2>
+        <p>
             Historically, U.S. sanctions restricted Chinese chip designers from leveraging TSMC's advanced processes.  <br id="br">
             If SMIC's 7nm process becomes widely adopted by other Chinese manufacturers, it could catalyse China's  <br id="br">
             progress in areas like AI, high-speed computing, and 5G. This progression aligns with China's vision of  <br id="br">
             transitioning from a manufacturing behemoth to a global manufacturing powerhouse.
         </p>
-        <p id="article">
+        <p>
             While specifics about SMIC's 7nm shipments remain undisclosed, advancements in this domain could propel <br id="br">
             China's innovations in AI and high-speed computing. Such progress could enhance China's economic and defence <br id="br">
             capabilities, posing challenges for Taiwan and the broader East Asian region.
         </p>
-        <p id="article">
+        <p>
             China's modernization goals, set for the People's Liberation Army's centennial in 2027, emphasize <br id="br">
             advancements in AI, quantum computing, and hypersonic, all of which necessitate advanced chips. Merely <br id="br">
             restricting China's access to EUV machines won't impede its progress in advanced chip processes, which <br id="br">
             could bolster its military capabilities.
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>U.S. Diplomatic Endeavours</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>U.S. Diplomatic Endeavours</u></b></h2>
+        <p>
             The U.S. is currently lobbying Japan and the Netherlands to expand the existing EUV embargo to encompass  <br id="br">
             DUV machines. While some argue that isolating China might hasten its path to self-sufficiency, historical  <br id="br">
             patterns suggest China's ambitions won't wane until it achieves market dominance. Hence, merely restricting  <br id="br">
             China's access to EUV machines might not effectively prevent its advancements in cutting-edge technology  <br id="br">
             nodes below 10nm.
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Peer into the Future</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>Peer into the Future</u></b></h2>
+        <p>
             Predicting the trajectory of China's semiconductor sector is akin to gazing into a crystal ball. While financial <br id="br">
             prowess is a significant asset, the broader chipmaking ecosystem demands a blend of individual creativity, <br id="br">
             innovation, and an environment fostering free expression. These attributes are often synonymous with <br id="br">
             democratic setups.
         </p>
-        <p id="article">
+        <p>
             To provide some context, the 2022 Bloomberg Innovative Index ranked the top 10 most innovative countries,  <br id="br">
             all of which are democracies. In the Asian context, South Korea and Singapore lead the pack, ranking sixth  <br id="br">
             and seventh respectively. China, despite its massive strides, ranks 11th globally and third in Asia.
         </p>
-        <p id="article">
+        <p>
             While China has been a global frontrunner in patent submissions since 2011, the challenge lies in converting <br id="br">
             volume to value and ensuring global applicability and acceptance of these patents.
         </p>
-        <p id="article">
+        <p>
             While the success China achieves in the semiconductor industry can be anyone’s guess due to external and internal <br id="br">
             factors, what can be a certainty is that the once prosperous world of collaboration, encouraged by all the developed <br id="br">
             nations is slowly coming to an end, being instead replaced by protectionism and bipolarity akin to the cold war, <br id="br">
