@@ -51,6 +51,10 @@ body {
     color: black;
 }
 
+#br {
+    display: none;
+}
+
 .navbar i {
   color: black;
   padding: 14px 20px;
@@ -71,11 +75,30 @@ body {
 
 .main img {
     width: 55%; height: auto;
+    text-align: center;
+}
+
+.article {
+    font-family: century schoolbook;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    width: 50%;
+}
+
+#underphoto {
+    font-family: century schoolbook; font-size: 10px;
 }
 
 
 #author {
     font-family: century schoolbook;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -97,9 +120,33 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .article {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .article {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
     .main img {
         width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    #underphoto {
+        font-size: 9px;
     }
 }
 
@@ -172,13 +219,14 @@ body {
             <b style="font-family: century schoolbook;"><u>The Threat Of Rising National Debts</u></b>
         </p>
         <img src="https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1323938546/image_1323938546.jpg?io=getty-c-w750" alt="Default Image">
-        <p style="font-family: century schoolbook; font-size: small;">
+        <p id="underphoto">
         <b>US Capitol building with dollar bills in the background</b>
         </p>
         <p id="author">
-            <b>By: Colin Yin | Harvard University</b>
+            <b>By: Colin Yin | Harvard University | 18/10/2023</b>
         </p>
-        <p id="article">
+        <div class="article">
+        <p>
             National debts are rising worldwide with many of the largest economies having debts in excess of 100% of gross <br id="br">
             domestic product (GDP). Japan for example has a debt-to-GDP ratio of 263%, whilst the US is at 123%. National <br id="br">
             debt is defined as the total sum of money that the government owes countries, companies, and individuals that <br id="br">
@@ -188,13 +236,13 @@ body {
             drive down GDP as businesses and individuals leave your nation, or consistent fiscal surpluses, which would <br id="br">
             see massive cuts to state spending, a measure that is largely political suicide. 
         </p>
-        <p id="article">
+        <p>
             Furthermore, the situation of large debts is set to continue as the Congressional Budget Office predicts that <br id="br">
             US national debt will reach 195% of GDP in 2053. Whilst for the UK the Office for Budget Responsibility predicts <br id="br">
             a national debt around 300% of GDP by 2070. Astronomically high debts like these will have severe consequences <br id="br">
             for the economic and political health of these nations and the international system writ large. 
         </p>
-        <p id="article">
+        <p>
             As populations across the globe demand ever further increases in government spending on welfare, the military, <br id="br">
             and infrastructure, the government must find the money from somewhere in order to fund these programs. This money <br id="br">
             can be raised in two ways, through high levels of taxation or through borrowing money or what usually is the case <br id="br">
@@ -205,7 +253,7 @@ body {
             cycle of even more debt. 
             
         </p>
-        <p id="article">
+        <p>
             This current situation seems to have no end, as Congress just recently raised the debt ceiling for the 78th time <br id="br">
             since 1960, at the risk of a government default if they hadn’t. This is not a sustainable solution and one that <br id="br">
             makes me question whether there is any point to having a debt ceiling if it just continues to get raised. Yet, <br id="br">
@@ -213,7 +261,7 @@ body {
             way, with former Speaker of the House Paul Ryan’s social security spending cuts plan, being lambasted by former <br id="br">
             President Donald Trump and the majority of the Republican base as one example.
         </p>
-        <p id="article">
+        <p>
             Yet, if no solution is brought forward, the US risks its place as the current global hegemon. An increased reliance <br id="br">
             on borrowing decreases the reliability of a repayment on this debt. Much like if you were to borrow money and never <br id="br">
              pay it back, lenders would be far less likely to lend you money in future. The same can be said with national debt. <br id="br">
@@ -225,7 +273,7 @@ body {
              of the US government make it such, that heavy cuts have to be made to the US military, decreasing the US’s ability to <br id="br">
              take on the role as global hegemon. 
         </p>
-        <p id="article">
+        <p>
             In desperate times, governments may have to fall back on money creation in order to pay off this debt. Money creation <br id="br">
             involves the printing of money by central banks in order to increase the money supply and incentivise consumption, <br id="br">
             as well as to pay off debts. Yet, when the money supply expands, intended to pay off government debt, this causes an <br id="br">
@@ -234,29 +282,29 @@ body {
             debt to finance state spending. However, most worryingly is that this policy doesn’t even have to be enacted for the <br id="br">
             consequences to appear. 
         </p>
-        <p id="article">
+        <p>
             If those that hold the dollar suspect that the US will have to, or could potentially, use money creation to pay off <br id="br">
             debt they may well begin to sell their holdings of dollars, predicting potential inflation and currency depreciation. <br id="br">
             This could create a run on the dollar resulting in stagflation similar to the situation faced under Nixon in the 1970s. <br id="br">
             Stagflation is a situation in which high inflation is accompanied by stagnant growth and high unemployment. 
         </p>
-        <p id="article">
+        <p>
             A run on the dollar would reduce the pounds buying power and make imports more expensive, which, given the US is an <br id="br">
             import oriented economy, particularly with regards to goods, higher import costs mean inflation rises.  
         </p>
-        <p id="article">
+        <p>
             As inflation rises, so do interest rates and as a result consumption is disincentivised. This means companies are <br id="br">
             less able to sell goods and services, hampering economic growth. Lastly, as economic growth stagnates, firm’s profit <br id="br">
              margins will decrease, due to lower demand and as a result firms will begin to lay off workers to keep prices low, <br id="br">
              with the aim of increasing demand, resulting in stagflation. 
         </p>
-        <p id="article">
+        <p>
             Therefore if the government decides the way forward with regards to paying off debt is to print money, the potential <br id="br">
             for high inflation becomes very real. Yet, even more worryingly is the fact that money does not even have to printed <br id="br">
             for there to be a run on the dollar and resulting stagflation, if the options open to the US government to pay off <br id="br">
             debt shrinks to solely money creation. 
         </p>  
-        <p id="article">
+        <p>
             Instead, the US has some options to reverse this doom and gloom. A key solution would be to cut state spending heavily, <br id="br">
             whereby the US government runs a fiscal surplus every year. The current US deficit stands at $1.5 trillion, which is <br id="br">
             larger than the Spanish economy and to reverse, would require a mix of cuts in state spending and higher tax revenue <br id="br">
@@ -267,7 +315,8 @@ body {
             propositions. Maybe, as Warren Buffet argued, the best way to reduce the government deficit and reduce national debt <br id="br">
             as a result, is to pass a law that states, if there is a deficit that year of over 3% of GDP, then all sitting members <br id="br">
             of congress are ineligible for re-election. That would establish the right incentives. 
-        </p>      
+        </p>
+        </div>
     </div>
     <div class="footer">
         <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
