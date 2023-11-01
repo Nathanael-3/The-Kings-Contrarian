@@ -51,6 +51,10 @@ body {
     color: black;
 }
 
+#br {
+    display: none;
+}
+
 .navbar i {
   color: black;
   padding: 14px 20px;
@@ -71,14 +75,29 @@ body {
 
 .main img {
     width: 55%; height: auto;
+    text-align: center;
 }
 
-#article {
+.article {
     font-family: century schoolbook;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    width: 50%;
+}
+
+#underphoto {
+    font-family: century schoolbook; font-size: 10px;
 }
 
 #author {
     font-family: century schoolbook;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -100,9 +119,33 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .article {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .article {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
     .main img {
         width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    #underphoto {
+        font-size: 9px;
     }
 }
 
@@ -175,13 +218,14 @@ body {
             <b style="font-family: century schoolbook;"><u>The Ultimate Pursuit Of Knowledge: Mathematics, Philosophy, And History</u></b>
         </p>
         <img src="https://omnia.sas.upenn.edu/sites/default/files/iStock-91839945.jpg" alt="Default Image">
-        <p style="font-family: century schoolbook; font-size: small;">
+        <p id="underphoto">
         <b>The ancient Greek mathematician Euclid as depicted in Raphael's School of Athens</b>
         </p>
         <p id="author">
-            <b>By: Marcus Johansson  | The University of Texas at Austin</b>
+            <b>By: Marcus Johansson  | The University of Texas at Austin | 13/09/2023</b>
         </p>
-        <p id="article">
+        <div class="article">
+        <p>
             College is about the application of knowledge in the pursuit of truth. Yet, this mission has largely <br id="br">
             gone astray from campuses across America, as college becomes increasingly about credentials, politics, <br id="br">
             and incessant specialisation. Our Founding Founders were not interested in having expertise in one <br id="br">
@@ -190,7 +234,7 @@ body {
             strong foundation in how to attain and apply knowledge across disciplines. We called these types of <br id="br">
             people Renaissance men. Unfortunately, they have come to be a rather endangered species.
         </p>
-        <p id="article">
+        <p>
             I propose a new academic degree, devoted to the concept of attaining and applying knowledge across <br id="br">
             disciplines, and providing young people with the best possible tools to understand how to think. <br id="br">
             This academic degree would be three pronged, much like the famous Philosophy, Politics and Economics <br id="br">
@@ -199,7 +243,7 @@ body {
             I believe that these three subjects are integral to technological innovation and the creation of a <br id="br">
             free and prosperous society.
         </p>
-        <p id="article">
+        <p>
             Yet, the number of young people interested in any of these three subjects is tragically low. <br id="br">
             Mathematics is the 26th most popular major in the US, philosophy is the 56th, and history is 15th. <br id="br">
             In fact, when asking my peers about mathematics, philosophy, and history, most of them say these <br id="br">
@@ -209,7 +253,7 @@ body {
             historical observations about human nature. AI for example, is a practical piece of technology but <br id="br">
             its societal implications are rooted in philosophy.
         </p>
-        <p id="article">
+        <p>
             Mathematics is the study of numbers, utilised in formulas to help explain the physical realities <br id="br">
             around us. Philosophy builds on this foundation to theorise about the purpose of these physical <br id="br">
             realities, and history provides us with the case studies for these philosophical ideals. When <br id="br">
@@ -217,7 +261,7 @@ body {
             helping us to explain and better the physical realities that we are exposed to in our everyday <br id="br">
             lives as humans. 
         </p>
-        <p id="article">
+        <p>
             Our progress has largely stagnated in recent years, particularly outside the world of bits. <br id="br">
             The world of atoms looks highly similar to what it would have looked like in the 1970s, and <br id="br">
             my theory for why we are so focused politically on cultural issues, is because of the intense <br id="br">
@@ -226,6 +270,7 @@ body {
             dreamers, and radicals and there is no better way to teach these characteristics than through <br id="br">
             mathematics, philosophy, and history. 
         </p>
+        </div>
     </div>
     <div class="footer">
         <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
