@@ -51,6 +51,10 @@ body {
     color: black;
 }
 
+#br {
+    display: none;
+}
+
 .navbar i {
   color: black;
   padding: 14px 20px;
@@ -71,14 +75,29 @@ body {
 
 .main img {
     width: 55%; height: auto;
+    text-align: center;
 }
 
-#article {
+.article {
     font-family: century schoolbook;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    width: 50%;
 }
 
+#underphoto {
+    font-family: century schoolbook; font-size: 10px;
+}
+    
 #author {
     font-family: century schoolbook;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -100,9 +119,33 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .article {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .article {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
     .main img {
         width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    #underphoto {
+        font-size: 9px;
     }
 }
 
@@ -175,29 +218,30 @@ body {
             <b style="font-family: century schoolbook;"><u>Affirmative Action, DEI And What It All Means For The UK</u></b>
         </p>
         <img src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/TLRIWNSMQ5LUVHVWQ43JGQU6Q4.jpg" alt="Default Image">
-        <p style="font-family: century schoolbook; font-size: small;">
+        <p id="underphoto">
         <b>An anti affirmative action protestor in front of the US Supreme Court building</b>
         </p>
         <p id="author">
-            <b>By: Saket Mistri | University of Oxford</b>
+            <b>By: Saket Mistri | University of Oxford | 14/09/2023</b>
         </p>
-        <p id="article">
+        <div class="article">
+        <p>
             In the US, since Regents of the University of California v. Bakke in 1978 the use of race-based affirmative <br id="br">
             action was permitted, under the presumption that universities with students from diverse racial backgrounds, <br id="br">
             encourages diversity of thought and thus improves educational experience. This was the first time that the <br id="br">
             word ‘diversity’ came to replace the word discrimination. 
         </p>
-        <p id="article">
+        <p>
             Since then, the word diversity has spread to the corporate sector, NGO’s, governments, and the UN. The word <br id="br">
             has gained so much traction that it is increasingly difficult to find a university or business that doesn’t <br id="br">
             tout their diversity, equity and inclusion (DEI) initiatives and statistics. The argument being that a <br id="br">
             diversity of races, genders, sexualities etc. create an environment that is inclusive to diversity of thought <br id="br">
             and this diversity of thought benefits educational outcomes, profit, political outcomes etc.
         </p>
-        <p id="article">
+        <p>
             Yet, is any of this true or are these companies and institutions simply advancing ideological objectives? 
         </p>
-        <p id="article">
+        <p>
             Not that much research has actually been done on this subject and what research there is, is often associated <br id="br">
             with partisan groups who are already heavily in favour of DEI and affirmative action for reasons other than <br id="br">
             diversity of thought and seek to legitimise the practice further, by mentioning a perceived additional benefit. <br id="br">
@@ -205,21 +249,21 @@ body {
             on university campuses and businesses across the Anglosphere, it seems that DEI and affirmative action initiatives <br id="br">
             are having the opposite effect to creating a diversity of thought. 
         </p>
-        <p id="article">
+        <p>
             <a href="https://www.cato.org/blog/note-unjust-firing-dr-tabia-lee">Professors have been fired for voicing their opinion</a>, <a href="https://www.cspicenter.com/p/academic-freedom-in-crisis-punishment">employees have been silenced</a>, and <a href="https://www.wsj.com/articles/ruy-teixeira-gets-political-asylum-american-enterprise-institute-center-for-american-progress-robert-doar-11657919700">researchers stifled.</a> <br id="br">
             If a movement is attempting to silence any criticism, it is highly unlikely that it promotes a diversity of thought. <br id="br">
             In fact, a group of <a href="https://journalofcontroversialideas.org/article/3/1/236">natural scientists (including two Nobel laureates)</a> and various <a href="https://www.aei.org/research-products/report/prohibit-diversity-equity-and-inclusion-statements/">research studies by major think <br id="br">
             tanks</a> have both found that there is an inverse link between DEI and diversity of thought, typically because those <br id="br">
             who support DEI and benefit from it share a very similar worldview. 
         </p>
-        <p id="article">
+        <p>
             This worldview believes group disparity equates to group discrimination and thus group discrimination is necessary <br id="br">
             to correct group disparity. Given that criticism of the movement comes with a steep cost and those who advance <br id="br">
             DEI tend to share a similar progressive worldview, it instead creates a culture of groupthink that is openly <br id="br">
             antagonistic to diversity of thought. In practice, it acts in a very similar way to Herbert Marcuse’s idea of <br id="br">
             liberating tolerance. 
         </p>
-        <p id="article">
+        <p>
             In fact, it is this belief in group disparity and the need for group discrimination that is the actual driving <br id="br">
             force behind affirmative action and DEI initiatives, whilst diversity of thought is merely used a nice sounding <br id="br">
             placeholder.  The argument for diversity of thought breaks down rather quickly upon the realisation that skin <br id="br">
@@ -229,7 +273,7 @@ body {
             discrimination and those who are most fervently pushing for these measures often overcome the lacklustre pushback <br id="br">
             of those who are apolitical or socially liberal.
         </p>
-        <p id="article">
+        <p>
             As Justice Thomas states in his concurring opinion on Students for Fair Admissions v. Harvard “Harvard and UNC <br id="br">
             ask us to blind ourselves to the burdens imposed on the millions of innocent applicants denied admission because <br id="br">
             of their membership in a currently disfavoured race.” Thus diversity becomes divvying up individuals by immutable <br id="br">
@@ -237,7 +281,7 @@ body {
             unfavourable identity group, and inclusion becomes silence all that oppose this programme. It’s a clever use of <br id="br">
             positive language to hide insidious motives, reminiscent of something you might find in Nineteen Eighty-Four. 
         </p>
-        <p id="article">
+        <p>
             That being said I don’t believe the majority of those who support these initiatives are acting insidiously, <br id="br">
             instead it is more likely coming from a place of compassion or ignorance. The use of words that we deem positive <br id="br">
             like ‘inclusion’ and ‘diversity’ mean those who are less politically interested or aware think of these <br id="br">
@@ -249,7 +293,7 @@ body {
             and almost every company makes a conscious effort to achieve racial and gender parity through discrimination <br id="br">
             (both illegal practices). 
         </p>
-        <p id="article">
+        <p>
             Yet outside of merely their illegality, these initiatives will make UK firms perform worse than their American <br id="br">
             counterparts, due to the fact that hiring based on meritocratic principles allows firms to employ from a wider <br id="br">
             talent pool, hire more productive and more talented workers, avoid the needless politicisation of their companies,<br id="br">
@@ -257,12 +301,12 @@ body {
             UK economy is performing badly, ensuring businesses are running as efficiently as possible is in the interest of <br id="br">
             the UK government.
         </p>
-        <p id="article">
+        <p>
             <a href="https://blogs.lse.ac.uk/businessreview/2023/07/10/the-end-of-affirmative-action-will-hurt-business/">Whilst universities like LSE</a> have already been quick to lament the end of affirmative action and its consequences  <br id="br">
             for business, any litigation brought against a company in the US is unfortunately unlikely to significantly effect  <br id="br">
             DEI initiatives in the UK and thus UK business practices are unlikely to impacted at all. 
         </p>
-        <p id="article">
+        <p>
             Those arguing for a continuation of these programs, I would take heed of the warning of Justice Thomas when he  <br id="br">
             argues “I would have thought that history had by now taught a “greater humility” when attempting to “distinguish  <br id="br">
             good from harmful uses of racial criteria.” From the Black Codes, to discriminatory and destructive social welfare  <br id="br">
@@ -273,13 +317,14 @@ body {
             once argued that race-based discrimination was needed “to preserve harmony and peace and at the same time furnish  <br id="br">
             equal education to both groups.”
         </p>
-        <p id="article">
+        <p>
             It is high time for the UK to reflect on this landmark decision across the pond and act to prevent the widespread <br id="br">
             practice of discrimination by immutable characteristics. It is of the upmost importance that the UK remain committed <br id="br">
             to meritocracy, equality and freedom to all, as the great classical liberal thinkers who occupied this island <br id="br">
             championed for, let their legacy not go to waste. 
         </p>
-    </div>
+        </div>
+      </div>
     <div class="footer">
         <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
             <button id="submissions" type="button" class="btn shadow-none btn-group btn-group-sm" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScVCJpK5aeMXxLZ0iXjyy-71HWyMgcltca3ydul_BEis5OWJg/viewform?usp=sf_link'">Submissions</button>
