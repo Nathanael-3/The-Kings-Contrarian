@@ -51,6 +51,10 @@ body {
     color: black;
 }
 
+#br {
+    display: none;
+}
+
 .navbar i {
   color: black;
   padding: 14px 20px;
@@ -71,14 +75,29 @@ body {
 
 .main img {
     width: 55%; height: auto;
+    text-align: center;
 }
 
-#article {
+.article {
     font-family: century schoolbook;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    width: 50%;
+}
+
+#underphoto {
+    font-family: century schoolbook; font-size: 10px;
 }
 
 #author {
     font-family: century schoolbook;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -100,9 +119,33 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .article {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .article {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
     .main img {
         width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    #underphoto {
+        font-size: 9px;
     }
 }
 
@@ -175,20 +218,21 @@ body {
             <b style="font-family: century schoolbook;"><u>The Untapped Conservative Demographic</u></b>
         </p>
         <img src="https://smithsonianassociates.org/ticketing/images/web-core-2018/legacy-of-buckley.jpg" alt="Default Image">
-        <p style="font-family: century schoolbook; font-size: small;">
+        <p id="underphoto">
         <b>William F. Buckley meeting with President Ronald Reagan</b>
         </p>
         <p id="author">
-            <b>By: Mckenzie Rostack | Princeton University</b>
+            <b>By: Mckenzie Rostack | Princeton University | 29/09/2023</b>
         </p>
-        <p id="article">
+        <div class="article">
+        <p>
             Increasingly, the American right has been supportive of an argument premised on restricting immigration <br id="br">
             to the US. Whilst there are credible arguments for restricting immigration, particularly illegal immigration, <br id="br">
             I plan to illustrate that if conservatives were more thoughtful and nuanced when addressing this issue amongst <br id="br">
             others, there is a huge untapped conservative demographic amongst these immigrant communities, that could allow <br id="br">
             the Republicans to win the popular vote for the first time since 2004. 
         </p>
-        <p id="article">
+        <p>
             Despite Ruy Teixeira and John Judis’s claims in 2002 about an emerging democrat majority amongst college educated <br id="br">
             whites and ethnic minorities, both Hispanics and Asians are actually shifting more right than they are left. <br id="br">
             Venezuelans fleeing the effects of socialism in their home country could easily become a major voting bloc for <br id="br">
@@ -197,7 +241,7 @@ body {
             It is thus astoundingly poor from a political standpoint that the Republicans are still unable to get these <br id="br">
             groups onside. 
         </p>
-        <p id="article">
+        <p>
             I theorise that this is for two key reasons: economic interventionism and lacklustre messaging. Public attitudes <br id="br">
             towards free-market economics are very low and any positivity around capitalism is hard to come by. A key reason <br id="br">
             why Trump was both the nominee and elected in 2016 was because of his willingness to embrace protectionism and <br id="br">
@@ -206,26 +250,27 @@ body {
             in the Democrat primaries. That being said, the Republican Party still attempts to message that they are open to <br id="br">
             fiscal conservatism and free-market economics, despite the backtracks made when in office. 
         </p>
-        <p id="article">
+        <p>
             As a result, the party promising huge increases in social security, tax-funded healthcare and the like, do <br id="br">
             significantly better with a voting base who favours economic interventionism and doesn’t really care for or <br id="br">
             think about, the long term effects to massive amounts of government spending. Therefore, Republicans can either <br id="br">
             full-scale abandon their commitments to right wing economic policies or they must do a better job at messaging <br id="br">
             its benefits to voters. 
         </p>
-        <p id="article">
+        <p>
             This poor messaging is apparent outside of economic policy too. Whether its affirmative action, Roe v. Wade, <br id="br">
             or immigration, the Republican Party can make huge inroads with religious conservative ethnic-minority communities, <br id="br">
             if they were more thoughtful and nuanced in their dispositions. How is it that the vast majority of Asian-Americans <br id="br">
             continue to back and vote for a party that openly supports their discrimination or a majority of religious <br id="br">
             Hispanic-Americans backing a party that is antithetical to traditional religious ideas and practice? 
         </p>
-        <p id="article">
+        <p>
             Conservatives must engage in and win the battle of ideas in these communities. There is a base of conservatism <br id="br">
             to be found, which just needs the correct messaging to bring out. Stop engaging in intraparty warfare, election <br id="br">
             denial, and Keynesian economics and get back to basics to establish a coalition of ethnically diverse conservatives, <br id="br">
             that won’t lose a popular vote for years to come. 
         </p>
+        </div>
     </div>
     <div class="footer">
         <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
