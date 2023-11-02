@@ -51,6 +51,10 @@ body {
     color: black;
 }
 
+#br {
+    display: none;
+}
+
 .navbar i {
   color: black;
   padding: 14px 20px;
@@ -71,14 +75,29 @@ body {
 
 .main img {
     width: 55%; height: auto;
+    text-align: center;
 }
 
-#article {
+.article {
     font-family: century schoolbook;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    width: 50%;
+}
+
+#underphoto {
+    font-family: century schoolbook; font-size: 10px;
 }
 
 #author {
     font-family: century schoolbook;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -100,9 +119,33 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .article {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .article {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
     .main img {
         width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    #underphoto {
+        font-size: 9px;
     }
 }
 
@@ -175,19 +218,20 @@ body {
             <b style="font-family: century schoolbook;"><u>What Are We To Make Of The News Of High Schools Withholding Notifications Of National Merit Awards? </u></b>
         </p>
         <img src="https://www.usnews.com/object/image/00000178-b72c-dce3-a1fb-bfadf1d10000/210409-thomasjefferson1-submitted.jpg?update-time=1617980946956&size=responsive640" alt="Default Image">
-        <p style="font-family: century schoolbook; font-size: small;">
+        <p id="underphoto">
         <b>Thomas Jefferson High School for Science and Technology in Virginia, USA</b>
         </p>
         <p id="author">
-            <b>By: Nathanael Kennedy-Leroi | King's College London</b>
+            <b>By: Nathanael Kennedy-Leroi | King's College London | 03/09/2023</b>
         </p>
-        <p id="article">
+        <div class="article">
+        <p>
             It is unjust that one should be penalised because of a desire for absolute equality, which, make no <br id="br">
             mistake is the ultimate goal of these initiatives. It harms not only the person whose award was withheld <br id="br">
             from them, but also those that the schools are supposedly trying to help. This teaches a generation that <br id="br">
             hard work and excellence is pointless and instead egalitarian mediocrity is cherished. 
         </p>
-        <p id="article">
+        <p>
             Equality of opportunity necessarily leads to inequality of outcomes. Firstly, we are not born equal and <br id="br">
             secondly, we use our free will and individual liberty in different ways. Some students may decide to work <br id="br">
             incredibly hard to win National Merit awards, while others would rather engage with sports or a significant <br id="br">
@@ -195,13 +239,14 @@ body {
             for a society to give students a false sense of competence, as Ben Shapiro’s catchphrase goes ‘facts don’t care <br id="br">
             about your feelings,’ and neither should the allocation of National Merit awards.
         </p>
-        <p id="article">
+        <p>
             At my college the opposite has been true to high schools, where instead of withholding merit from talented <br id="br">
             students, grade inflation aims to reward mediocre students through boosting their grades to create better <br id="br">
             grade equality. These anti-meritocracy initiatives will potentially greatly affect my future academic <br id="br">
             decisions. As someone who is hoping to apply to law school in the US, the attempt to scrap the use of the <br id="br">
             LSAT in favour of subjective diversity & inclusion criteria will likely play a major role in my decision. 
         </p>
+        </div>
     </div>
     <div class="footer">
         <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
