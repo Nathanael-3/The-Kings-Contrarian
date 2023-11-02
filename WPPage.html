@@ -51,6 +51,10 @@ body {
     color: black;
 }
 
+#br {
+    display: none;
+}
+
 .navbar i {
   color: black;
   padding: 14px 20px;
@@ -71,14 +75,29 @@ body {
 
 .main img {
     width: 55%; height: auto;
+    text-align: center;
 }
 
-#article {
+.article {
     font-family: century schoolbook;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    width: 50%;
+}
+
+#underphoto {
+    font-family: century schoolbook; font-size: 10px;
 }
 
 #author {
     font-family: century schoolbook;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -100,9 +119,33 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .article {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .article {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
     .main img {
         width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    #underphoto {
+        font-size: 9px;
     }
 }
 
@@ -175,32 +218,32 @@ body {
             <b style="font-family: century schoolbook;"><u>The Star-Spangled Banner Should Remain Waving, Full Mast, O’er The Land Of The Free And The Home Of The Brave</u></b>
         </p>
         <img src="https://media.istockphoto.com/id/522897875/photo/us-flags-at-half-staff-and-statue-of-liberty.jpg?s=612x612&w=0&k=20&c=OPJA1dCl2PJUC_RyZqGOdFWD6zcWEUpsRlkNELU05CI=" alt="Default Image">
-        <p style="font-family: century schoolbook; font-size: small;">
+        <p id="underphoto">
         <b>US flags flying at half mast in front of the Statue of Liberty</b>
         </p>
         <p id="author">
-            <b>By: Grant Wernick | Duke University</b>
+            <b>By: Grant Wernick | Duke University | 23/10/2023</b>
         </p>
-        <p id="article">
+        <p>
             Americans are flag obsessed to the point of shocking the self-effacing British conscience. Just ask CNN <br id="br">
             contributor Laura Beers, who claims her English husband detects “sinister overtones of interwar <br id="br">
             dictatorship” in the way American students traditionally start the day—by pledging allegiance to the flag,<br id="br">
              and to the republic for which it stands. 
         </p>
-        <p id="article">
+        <p>
             The US national anthem layers on the devotion even thicker than the pledge of allegiance. My friend Anna <br id="br">
             from Oxfordshire can’t sing God Save the King but knows how the Star-Spangled Banner sounds belted out by <br id="br">
             9,000 rabid Duke fans before tip-off at Cameron Indoor Stadium. The redcoats couldn’t touch our broad <br id="br">
             stripes and brights stars at Fort McHenry two centuries ago, and she hears about it every time she attends <br id="br">
             a college basketball game. 
         </p>
-        <p id="article">
+        <p>
             Americans feel in our bones that we have nothing to learn from the British, much less the British monarchy <br id="br">
             (notwithstanding Prince Harry’s universally well-received musings, like when he declared the First Amendment <br id="br">
             “bonkers”). However, to show the Stars and Stripes the respect they deserve, we Americans must swallow our <br id="br">
             pride and look to the example of Buckingham Palace.
         </p>
-        <p id="article">
+        <p>
             The royals follow the Union Jack protocols to a fault. One such protocol reserves the lowering of the flag to <br id="br">
             half-mast for the death of a member of the royal family. Notoriously, they even initially refused to lower the <br id="br">
             flag for Diana, who technically was not a princess at the time of her death. (Prince Phillip complained privately <br id="br"> 
@@ -208,7 +251,7 @@ body {
             flag carveout for the monarchy. Nonetheless, we should be much more sparing in our use of this potent symbol <br id="br">
             of national mourning. 
         </p>
-        <p id="article">
+        <p>
             I first noticed excessive half-masting in 2022 in North Carolina. Frequently the flag would be lowered without any <br id="br">
             clear national tragedy. Combing through past North Carolina flag alerts, it appears many of the instances were <br id="br">
             decisions by Governor Roy Cooper to commemorate the passing of a former member of the state legislature. <br id="br">
@@ -216,7 +259,7 @@ body {
              of a local politician, which has no national significance, is a poor reason to lower what is the ultimate <br id="br">
              national symbol. 
         </p>
-        <p id="article">
+        <p>
             To his credit, Governor Cooper seems as conservative as Prince Phillip when compared to his counterpart in <br id="br">
             New Jersey, Phil Murphy. At the beginning of August, I was attending a family reunion in a scenic seaside town <br id="br">
             of the Garden State, when my bliss was interrupted by the sight of the American flag at half-mast over town hall. <br id="br">
@@ -224,12 +267,12 @@ body {
             event (though, in what should have been a hint, no private residences had elected to follow the government <br id="br">
             building’s suit).
         </p>
-        <p id="article">
+        <p>
             No large-scale tragedy of the sort had occurred. Rather, the lieutenant governor of New Jersey, Sheila Y. Oliver, <br id="br">
             had suddenly passed away. In Executive Order Number 338, Governor Murphy mandated that US and New Jersey <br id="br">
             state flags be flown at half-mast for one month to commemorate Oliver.
         </p>
-        <p id="article">
+        <p>
             Governor Murphy’s desire to honor her life and service was completely understandable. It may even have been appropriate <br id="br">
             to lower the US flag for a short period (though no more than 10 days, the amount of time allocated by the US flag <br id="br">
             code for the death of the vice president). But to put 30 days in perspective, that was how long John F. Kennedy <br id="br">
@@ -238,17 +281,18 @@ body {
              longer than the four day order by Governor Murphy after the terrorist attack at Abbey Gate that claimed the lives <br id="br">
              of 13 US servicemembers, during the disastrous evacuation of Afghanistan. 
         </p>
-        <p id="article">
+        <p>
             I understand that Governor Murphy deeply respected Ms. Oliver and considered her “a trailblazer and an icon,” but <br id="br">
             honoring the memory of a deceased politician for three and half weeks longer than 13 young Americans, who gave <br id="br">
             the last full measure of devotion, is obviously disgraceful. 
         </p>
-        <p id="article">
+        <p>
             There are better ways of honoring the passing of local figures than lowering the American flag. Leave it at its <br id="br">
             rightful place, gallantly streaming o’er the ramparts, except after the most devastating tragedies. Doing so will <br id="br">
             not make us more British, God forbid, but it will preserve our most potent symbol of national mourning for the <br id="br">
             dates that deserve to live in infamy.
         </p>
+      </div>
     </div>
     <div class="footer">
         <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
