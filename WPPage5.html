@@ -51,6 +51,10 @@ body {
     color: black;
 }
 
+#br {
+    display: none;
+}
+
 .navbar i {
   color: black;
   padding: 14px 20px;
@@ -71,14 +75,29 @@ body {
 
 .main img {
     width: 55%; height: auto;
+    text-align: center;
 }
 
-#article {
+.article {
     font-family: century schoolbook;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    width: 50%;
+}
+
+#underphoto {
+    font-family: century schoolbook; font-size: 10px;
 }
 
 #author {
     font-family: century schoolbook;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -100,9 +119,33 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .article {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .article {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
     .main img {
         width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    #underphoto {
+        font-size: 9px;
     }
 }
 
@@ -175,30 +218,31 @@ body {
             <b style="font-family: century schoolbook;"><u>Do You Feel Represented? A Case for British Localism</u></b>
         </p>
         <img src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2021/07/CLI313.village_novels.GettyImages157006201.jpg" alt="Default Image">
-        <p style="font-family: century schoolbook; font-size: small;">
+        <p id="underphoto">
         <b>View of an idyllic British village</b>
         </p>
         <p id="author">
-            <b>By: The Editorial Board</b>
+            <b>By: The Editorial Board | 11/09/2023</b>
         </p>
-        <p id="article">
+        <div class="article">
+        <p>
             The UK is made up of 650 constituencies across its four countries, each with different political persuasions, <br id="br">
             needs, and desires. Yet, the power that constituencies have to shape their local communities through taxation <br id="br">
             to education to now even speed limits is non-existent. 
         </p>
-        <p id="article">
+        <p>
             When compared to other Western nations the UK is remarkably centralised, despite devolution. States in the US, <br id="br">
             Canada, Germany, Switzerland, the Nordics etc. all have a level of autonomy that UK counties don’t even come <br id="br">
             close to. For example, in Sweden healthcare is coordinated on the local level, whilst in Germany the same can <br id="br">
             be said of education, and in Switzerland even its executive branch is shared between the different executives <br id="br">
             of each canton.
         </p>
-        <p id="article">
+        <p>
             When local politics becomes more influential than national politics, the reigning national political party, <br id="br">
             whilst still important, becomes a less polarising issue and surrenders the responsibility to impossibly satisfy <br id="br">
             the needs of all 650 constituencies.
         </p>
-        <p id="article">
+        <p>
             Instead of Westminster proclaiming the need to level up the UK, particularly parts of the North, why not give  <br id="br">
             Northern constituencies more power to establish policies that they believe best suit them? Much like in the US,  <br id="br">
             where Florida and California are pitched as the two ways to do governance or in Bavaria where business friendly  <br id="br">
@@ -206,39 +250,40 @@ body {
             to differentiate itself from London and the South and with the current centralisation of politics, it is unable  <br id="br">
             to do so.
         </p>
-        <p id="article">
+        <p>
             However, when discussing this idea amongst friends and relatives, people are quick to bemoan the incompetency <br id="br">
             of their local MP or local council, insisting that they themselves could probably do a better job. Despite this, <br id="br">
             many local MP’s, particularly where I live, have been in power for a very long time as their area continues to <br id="br">
             vote along party lines. 
         </p>
-        <p id="article">
+        <p>
             This has resulted in local politics becoming completely irrelevant to its locality, merely representing which <br id="br">
             party the area would like in the House of Commons. Whilst this is important, there is very little accountability <br id="br">
             on the local level, as for example a Labour MP in Lewisham Deptford knows they will never get voted out of office <br id="br">
             and thus has no incentive to rock the boat on policy, out of potential fear of things going wrong. 
         </p>
-        <p id="article">
+        <p>
             If local MP’s were held more accountable through added power to implement significant policy change on the local <br id="br">
             level and operated outside of a two party system, added political competition would bring much-needed alternatives <br id="br">
             to the current political status quo. A status quo that is resulting in fewer people turning out to vote and an <br id="br">
             increase in the popularity of the phrase ‘politically homeless’ particularly amongst Gen Z.
         </p>
-        <p id="article">
+        <p>
             Finally, the more we abstract politics up the chain to central planners, the more things are likely to go wrong or <br id="br">
             nothing to get done whatsoever. Instead, we must reclaim control over our localities to best aid the local communities <br id="br">
             that we all reside in. Democracy is not about power but about representation, which is best expressed on the local level.
         </p>
-        <p id="article">
+        <p>
             When politics becomes about power, the executive branch evidently turns into a political war to ideologically <br id="br">
             control the lives of the other half that didn’t vote for your candidate. This system polarises the electorate and <br id="br">
             leads everyone to feel dissatisfied, feeling as though their areas are neglected from the political spotlight or <br id="br">
             that the solutions being proposed are solutions that they vehemently disagree with.
         </p>
-        <p id="article">
+        <p>
             Our current politics is calling for more unity, which can only be accomplished by providing local communities <br id="br">
             with the mandate to have autonomy over their own governance. 
         </p>
+        </div>
     </div>
     <div class="footer">
         <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
