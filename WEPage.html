@@ -52,6 +52,10 @@ body {
     color: black;
 }
 
+#br {
+    display: none;
+}
+
 .navbar i {
   color: black;
   padding: 14px 20px;
@@ -72,10 +76,29 @@ body {
 
 .main img {
     width: 55%; height: auto;
+    text-align: center;
+}
+
+.article {
+    font-family: century schoolbook;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    width: 50%;
+}
+
+#underphoto {
+    font-family: century schoolbook; font-size: 10px;
 }
 
 #author {
     font-family: century schoolbook;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -97,9 +120,33 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .article {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .article {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
     .main img {
         width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    #underphoto {
+        font-size: 9px;
     }
 }
 
@@ -172,13 +219,14 @@ body {
             <b style="font-family: century schoolbook;"><u>A Once Great Alliance Has A New Black Sheep</u></b>
         </p>
         <img src="https://caspiannews.com/media/caspian_news/all_original_photos/1669751821_5412638_1669751717_7500622putin_tokayev.jpeg" alt="Default Image">
-        <p style="font-family: century schoolbook; font-size: small;">
+        <p id="underphoto">
         <b>Russian President Vladimir Putin shaking hands with Kazkah President Kassym-Jomart Tokayev</b>
         </p>
         <p id="author">
             <b>By: Nathanael Kennedy-Leroi | King's College London</b>
         </p>
-        <p id="article">
+        <div class="article">
+        <p>
             Russian foreign policy traditions can be contextualized as a linear path from the material to the social <br id="br">
             and back to the material. It begins with the unique geographical implications that Russia faces, for example <br id="br">
             the size of the nation, the fact that it has very few paths to the ocean, its harsh conditions and most <br id="br">
@@ -200,8 +248,8 @@ body {
             decision-making. These sentiments culminate in Russia regularly showing its military might to its neighbors, <br id="br">
             Ukraine being the crescendo. 
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Comparing The Broader Post-Soviet Space</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>Comparing The Broader Post-Soviet Space</u></b></h2>
+        <p>
             Ex-Soviet nations have taken wildly disparate paths in their attitudes to Russia and the international system <br id="br">
             more broadly. The Baltic nations have opted for a primarily liberal approach to foreign policy, integrating <br id="br">
             into both NATO and the EU and aligning themselves with the West. Now all three are members of the Eurozone and <br id="br">
@@ -221,8 +269,8 @@ body {
             approach. Yet, for this article I will aim to address the diverging stances taken by two of Russia’s closest <br id="br">
             allies, Kazakhstan and Belarus.
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Kazakhstan</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>Kazakhstan</u></b></h2>
+        <p>
             Kazakhstan is an oil rich Central Asian nation with a population of around 20 million people. It gained <br id="br">
             independence from the USSR in 1991 and has remained heavily aligned to Russia for much of its independent <br id="br">
             history. In fact, for much of this time it was widely considered as Russia’s second strongest ally after <br id="br">
@@ -251,8 +299,8 @@ body {
             of kilometers’ apart. Thus, due to the issues Russia is currently facing from the invasion of Ukraine, <br id="br">
             Kazakhstan has been able to not only distance itself but also actively challenge its once greatest ally.
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Belarus</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>Belarus</u></b></h2>
+        <p>
             Belarus on the other hand has had a drastically different approach, aligning itself even closer to Russia <br id="br">
             and letting Russia station troops in the nation to then invade Ukraine. Belarus is a mid sized Eastern <br id="br">
             European nation home to around 9 million people. It similarly gained independence from the USSR in 1991 <br id="br">
@@ -282,8 +330,8 @@ body {
             surrender its territorial sovereignty to Russia, allowing it to station troops and nuclear missiles <br id="br">
             in the nation.
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>In Sum</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>In Sum</u></b></h2>
+        <p>
             Following the Russian invasion of Ukraine, the post-Soviet space has diverged markedly in highly interesting <br id="br">
             ways. Once Russia’s second greatest ally, Kazakhstan has decided to distance itself with its northern <br id="br">
             neighbour potentially realizing that the centre of power in Asia now lies in the hands of China. Belarus <br id="br">
@@ -291,6 +339,7 @@ body {
             relating to Lukashenko’s political survival. Which strategy will play out the best? I will leave that to <br id="br">
             the fate of history.
         </p>
+        </div>
     </div>
     <div class="footer">
         <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
