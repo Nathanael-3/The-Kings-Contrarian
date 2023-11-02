@@ -51,6 +51,10 @@ body {
     color: black;
 }
 
+#br {
+    display: none;
+}
+
 .navbar i {
   color: black;
   padding: 14px 20px;
@@ -71,10 +75,29 @@ body {
 
 .main img {
     width: 55%; height: auto;
+    text-align: center;
+}
+
+.article {
+    font-family: century schoolbook;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    width: 50%;
+}
+
+#underphoto {
+    font-family: century schoolbook; font-size: 10px;
 }
 
 #author {
     font-family: century schoolbook;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -96,9 +119,33 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    .article {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .article {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
     .main img {
         width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    #underphoto {
+        font-size: 9px;
     }
 }
 
@@ -171,13 +218,14 @@ body {
             <b style="font-family: century schoolbook;"><u>The Christian case for a British style monarchy</u></b>
         </p>
         <img src="https://assets.vogue.com/photos/6216b2258729a2758e0b562a/3:2/w_3498,h_2332,c_limit/1175944922" alt="Default Image">
-        <p style="font-family: century schoolbook; font-size: small;">
+        <p id="underphoto">
         <b>Late Queen Elizabeth II walking with King Charles III</b>
         </p>
         <p id="author">
-            <b>By: Henri Rossano | Durham University</b>
+            <b>By: Henri Rossano | Durham University | 08/10/2023</b>
         </p>
-        <p id="article">
+        <div class="article">
+        <p>
             A few weeks ago, we commemorated one year since the death of Queen Elizabeth II and King Charles III’s <br id="br">
             accession to the throne. This commemoration was juxtaposed with the release of a <a href="https://www.bbc.co.uk/news/uk-66707923">YouGov opinion poll</a>, <br id="br">
             which showed that, among 18 to 24-year-olds, only 30% say that monarchy is “good for Britain”, compared <br id="br">
@@ -185,7 +233,7 @@ body {
             generational divide should ring, if not the death knell of British monarchy, then at least alarms bells <br id="br">
             among its defenders. 
         </p>
-        <p id="article">
+        <p>
             Christians and religious people generally should see this as a potential threat, as republics do not have <br id="br">
             a good track record when it comes to being friendly to religious practice. But, to give the devil his due, <br id="br">
             perhaps a certain scepticism towards monarchy is warranted. After all, monarchs throughout history have not <br id="br">
@@ -198,7 +246,7 @@ body {
             of Rex Christianissimus, fought with Pope Boniface VIII over the right to appoint bishops, among other things, <br id="br">
             and ended up sending armed troops to depose him. 
         </p>
-        <p id="article">
+        <p>
             The conflict between monarchs’ behaviour and their stated Christianity puts into question the practice of <br id="br">
             raising them to such heights. Is it God’s intention that human societies should organise themselves in such <br id="br">
             a way? After all, did God not express to the Prophet Samuel His disappointment with the people of Israel’s <br id="br">
@@ -207,8 +255,8 @@ body {
             Although the Christian pre-suppositions involved in this approach may seem narrow-minded, they offer an insight<br id="br">
             into the deep and indispensable meaning implied in monarchy, and are thus accessible for all. 
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>The need for hierarchy</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>The need for hierarchy</u></b></h2>
+        <p>
             To a certain extent, monarchic structures come naturally to human societies. This is partly inscribed in human <br id="br">
             biology, with extensive research demonstrating our biological ancestors’ proclivity for hierarchical organisation. <br id="br">
             But this is also borne out historically, where most early societies - meaning generally societies from <br id="br">
@@ -223,7 +271,7 @@ body {
             the need for someone to fill executive functions and to have a unified foreign policy, it was also a necessity <br id="br">
             to have a quick and absolute response to war or plague.
         </p>
-        <p id="article">
+        <p>
             British society today, and economically developed societies more generally, hardly face the same level of existential <br id="br">
             threats. And yet, Britain has kept its old monarchical system. In fact, it is the only Western country not to have <br id="br">
             changed its constitution in the last three hundred or so years (effectively since Cromwell’s Protectorate in the <br id="br">
@@ -237,8 +285,8 @@ body {
             or queens, or to expose them as hypocrites. It is instead an observation of the reality of the world as God created <br id="br">
             it, whereby societies need a symbolic entity at the top, lest they crumble to the ground. 
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Hierarchy of values</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>Hierarchy of values</u></b></h2>
+        <p>
             The first reason for this is that a country needs a hierarchy of values. Like individuals, collectives must <br id="br">
             judge and measure choices and decisions according to the principles which they have set out as worthy of <br id="br">
             aspiration. These principles may evolve over time, and individuals may disagree with them, but they form the <br id="br">
@@ -254,7 +302,7 @@ body {
             advancement in the real world. It is effectively declaring that there is nothing of value, except equality, which <br id="br">
             necessitates the individual’s potential and initiative to be stymied. 
         </p>
-        <p id="article">
+        <p>
             Societies generally seem to have grasped the value of hierarchy, not least of them Britain. Its principles, values <br id="br">
             and ideals, developed over many centuries, are enshrined at the top, represented by the monarch. Many of the ideas <br id="br">
             which emerged out of the British tradition are now seen as universal: ideas of freedom, rights, and equality before <br id="br">
@@ -268,7 +316,7 @@ body {
             the public whims or the common zeitgeist, and another that remains above that, representing the timeless values <br id="br">
             that characterise our country, and it is important that the two should not be confused. 
         </p>
-        <p id="article">
+        <p>
             This does not mean that these values are created at the top. As Christians, we believe that God is the source of all <br id="br">
             that is good and true, and that He is the ultimate point towards which all good hierarchies point: He is the ‘King of Kings’.<br id="br">
              This concept is well represented by the symbol of the great pyramid, as found on the back of the US dollar bill. <br id="br">
@@ -281,8 +329,8 @@ body {
             and by virtue of the nature of his or her office. 
           
         </p>
-        <p id="article">
-            <h2 style="font-size: medium; font-family: century schoolbook;"><u><b>Monarchy and implied meaning</u></b></h2>
+            <h2 style="font-size: medium; font-family: century schoolbook; text-align: left;"><u><b>Monarchy and implied meaning</u></b></h2>
+        <p>
             Small ‘r’ republicans would debate the need for a monarch to fill those functions, arguing instead for a more fluid <br id="br">
             and fair hierarchy with a deserving entity at the top. After all, shouldn’t the people at the top earn their way <br id="br">
             there? This is a fair and understandable point, which aims at letting the most competent people achieve higher status. <br id="br">
@@ -293,7 +341,7 @@ body {
             not undergirded by history and tradition, a monarchy would not last long. But I think that monarchy fits in better <br id="br">
             with a Christian view of the world, for a couple of reasons. 
         </p>
-        <p id="article">
+        <p>
             To begin, human beings need to be reminded that they do not create everything. The central idea of a republic is <br id="br">
             that the people have raised an individual to the heights of power by their own will and strength, and accordingly <br id="br">
             may tear him down if they so desire. This is consubstantial with the idea that any legitimate authority must spring <br id="br">
@@ -308,7 +356,7 @@ body {
             to define, and can often turn into either the tyranny of an individual who claims to embody the general will, or the <br id="br">
             tyranny of the majority.
         </p>
-        <p id="article">
+        <p>
             But on a more profound level, this vision poses a problem to a Christian way of life because it is fundamentally a <br id="br">
             prideful attitude. Indeed, the idea that we create our own systems ourselves, that there is no framework that is inherited <br id="br">
             from God or from our ancestors who were God-believers, can quickly translate into the Nietzschean idea that we can create <br id="br">
@@ -328,7 +376,7 @@ body {
             grounds us in reality because it establishes a basic value system inherited from people who were themselves grounded <br id="br">
             in reality, which should consequently not be recklessly tampered with. 
         </p>
-        <p id="article">
+        <p>
             Finally, monarchy by nature tends towards the religious because it is a reminder of the immaterial realm of meaning <br id="br">
             that undergirds and brings life to the physical world. Indeed, the idea that an individual can embody the nation is a <br id="br">
             rebuke to the rationalistic view that matter is the only valid level of analysis through which to understand the world. <br id="br">
@@ -350,6 +398,7 @@ body {
             endurance or gentleness, the same way Christ incarnated the all-encompassing principle which we can only express <br id="br">
             using words like God, the Logos, Being itself. 
         </p>
+        </div>
     </div>
     <div class="footer">
         <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
