@@ -51,6 +51,10 @@ body {
     color: black;
 }
 
+#br {
+    display: none;
+}
+
 .navbar i {
   color: black;
   padding: 14px 20px;
@@ -71,14 +75,30 @@ body {
 
 .main img {
     width: 55%; height: auto;
+    text-align: center;
 }
 
-#article {
+.article {
     font-family: century schoolbook;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    width: 50%;
 }
+
+#underphoto {
+    font-family: century schoolbook; font-size: 10px;
+}
+
 
 #author {
     font-family: century schoolbook;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer {
@@ -100,9 +120,34 @@ body {
     }
 }
 
+
+@media (max-width: 900px) {
+    .article {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .article {
+        width: 90%;
+    }
+}
+
 @media (max-width: 850px) {
     .main img {
         width: 80%; height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    #underphoto {
+        font-size: 9px;
     }
 }
 
@@ -175,19 +220,20 @@ body {
             <b style="font-family: century schoolbook;"><u>A Short Exposé On US-China Relations</u></b>
         </p>
         <img src="https://static01.nyt.com/images/2023/06/22/multimedia/00up-cold-war2-tjwk/00up-cold-war2-tjwk-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Default Image">
-        <p style="font-family: century schoolbook; font-size: small;">
+        <p id="underphoto">
         <b>A US and Chinese flag in front of a painting of the Great Wall of China</b>
         </p>
         <p id="author">
-            <b>By: Jason Tu | University College London</b>
+            <b>By: Jason Tu | University College London | 06/10/2023</b>
         </p>
-        <p id="article">
+        <div class="article">
+        <p>
             The US and China have a long and rich history that in recent years has meant an extraordinary amount of <br id="br">
             economic collaboration. However, both the US and China have turned towards protectionism as their <br id="br">
             relationship has tensed. In this short exposé, I will discuss the events leading up to the present situation <br id="br">
             and give my thoughts on the future outlook of US-China relations.
         </p>
-        <p id="article">
+        <p>
             To understand why current geopolitical tensions are so high between these two economic powerhouses, we shall <br id="br">
             go back to 2018. The Trump Administration had implemented sweeping tariffs on over US$34 billion worth of <br id="br">
             Chinese goods, alongside other trade restrictions in the hopes of forcing China to make changes to what was <br id="br">
@@ -195,7 +241,7 @@ body {
             China retaliated by placing their own respective tariffs on more than 500 US products. What resulted was <br id="br">
             the US being accused of “trade bullying” and China of “ripping off” Western countries. 
         </p>
-        <p id="article">
+        <p>
             This trade war, partnered with the Covid-19 outbreak and China’s threats of a Taiwanese invasion, means <br id="br">
             that US-China relations have not been this tense since the end of the Cold War. To make matters worse, <br id="br">
             Biden recently met with Vietnam’s general secretary, Nguyen Phu Trong where the pair discussed the threat <br id="br">
@@ -203,7 +249,7 @@ body {
             manufacturing threat that Vietnam poses for China due to its low labour and capital costs, China is likely <br id="br">
             to not take kindly to the US’s attempts to establish allies in the Sino sphere of influence. 
         </p>
-        <p id="article">
+        <p>
             Furthermore, both sides are pursuing a more aggressive foreign policy in a time where the US’s relative <br id="br">
             global power is weakening and China’s export stability falling. Given the weakened position of both parties, <br id="br">
             the two nations are becoming increasingly paranoid, despite both sides making it apparent that geopolitical <br id="br">
@@ -211,7 +257,7 @@ body {
             courting of allies across Asia, partnered with the increased economic warfare conducted by both sides, mean <br id="br">
             that US-China paranoia is anything but baseless. 
         </p>
-        <p id="article">
+        <p>
             The Biden Administration has recently passed the 2022 Inflation Reduction Act, which focuses on providing US <br id="br">
             companies the ability to receive government subsidies, if their respective product and/or business model <br id="br">
             promotes a domestic green energy supply or green energy transition. This policy is a three-pronged act, <br id="br">
@@ -222,7 +268,7 @@ body {
             anodes for electric vehicle batteries and QuantumScape, who are leaders in manufacturing solid-state batteries <br id="br">
             all face a common barrier to the green transition and that is China.
         </p>
-        <p id="article">
+        <p>
             China currently leads the electric vehicle industry by possessing a huge market, unprecedented state subsidies <br id="br">
             and dominating supply chains over key materials such as lithium, graphite, and copper. Electric vehicle <br id="br">
             technology may have been conjured up in the West, but China moved and scaled up early to consolidate its <br id="br">
@@ -232,7 +278,7 @@ body {
             technological prowess. This does not mean minor improvements on the lithium-ion battery but it means replacing <br id="br">
             this technology with state-of-the-art innovations.
         </p>
-        <p id="article">
+        <p>
             China’s newfound role as a superpower has created a US response that is rather similar to that opted for by <br id="br">
             the Nixon Administration during the 1970s, as Japan began to rise economically. During that time, a trade war <br id="br">
             never led to any actual conflict and was unlikely to do so given Japan’s inability to have a large scale army or <br id="br">
@@ -245,7 +291,7 @@ body {
             the theory of mutually assured destruction makes potential military conflict largely off the table. As a <br id="br">
             result, officials on both sides have made it clear that a war is not what they want. 
         </p>
-        <p id="article">
+        <p>
             The US and China need to implement policies that aim to reduce the current economic and geopolitical tensions  <br id="br">
             and focus on increased cooperation on pressing issues that are global in nature, such as AI and climate change.  <br id="br">
             Failure to do so on issues that drive their current confrontation will inevitably lead to collision. A war  <br id="br">
@@ -253,6 +299,7 @@ body {
             stability for years to come. A reversion back to the free-trade policies of old would be a welcome step away  <br id="br">
             from this hypothetical.
         </p>
+        </div>
     </div>
     <div class="footer">
         <h2 style="font-family: century schoolbook; font-size: 17px;"> &copy The King's Contrarian</h2>
